@@ -1,0 +1,28 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules", "build"],
+  "typeAcquisition": {
+    "enable": true
+  },
+  "compileOnSave": true,
+  "atom": {
+    "rewriteTsconfig": false
+  },
+  "eslintOptions": {
+    "enable": true
+  },
+  "formatOnSave": true,
+  "formatOnPaste": true,
+  "formatOnType": true,
+  "suggest": {
+    "completeFunctionCalls": true,
+    "names": true,
+    "paths": true
+  }
+}
