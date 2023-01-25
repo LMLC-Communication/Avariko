@@ -5,10 +5,56 @@
     </nuxt-link>
     <ul>
       <li>
-        <nuxt-link to="/">Home</nuxt-link>
+        <nuxt-link to="/progression">Progression</nuxt-link>
+        <ul>
+          <li>
+            <nuxt-link to="/progression#salle-de-presentation">Salle de présentation</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/progression#philosophie">Philosophie</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/progression#objectifs">Objectifs</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/progression#ambiance">Ambiance</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/progression#evaluation">Évaluation</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/progression#suivi">Suivi</nuxt-link>
+          </li>
+        </ul>
       </li>
       <li>
-        <nuxt-link to="/about">About</nuxt-link>
+        <nuxt-link to="/pratique">Pratique</nuxt-link>
+        <ul>
+          <li>
+            <nuxt-link to="/progression#type-d-exercices">Types d’exercices</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/progression#avec-quel-matos-on-bosse">Avec quel matos on bosse</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/progression#teens">Teens</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/progression#kids">Kids</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/progression#groupe">Groupe</nuxt-link>
+          </li>
+          <li>
+            <nuxt-link to="/progression#solo">Solo</nuxt-link>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <nuxt-link to="/coachs">Coachs</nuxt-link>
+      </li>
+      <li>
+        <nuxt-link to="/horaires-et-localisation">Horaires et localisation</nuxt-link>
       </li>
     </ul>
   </nav>
@@ -23,15 +69,11 @@ export default {
 <style lang="scss" scoped>
 nav {
   z-index: 10;
-  position: absolute;
-  height: 120px;
+  // height: 80px;
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
   align-items: center;
   padding: 0 20px;
-  left: 0;
-  right: 0;
-  top: 0;
   background-color: black;
   a {
     animation: fade 2s;
@@ -43,20 +85,63 @@ nav {
     }
   }
   img {
-    width: 120px;
+    width: 80px;
   }
   ul {
     margin-right: 20px;
     display: flex;
     list-style: none;
-    li {
-      margin-left: 20px;
-      a {
+    > li {
+      margin-right: 30px;
+      > a {
         color: white;
         text-decoration: none;
-        font-size: 1.6rem;
+        font-size: 16px;
         &:hover {
-          color: #ff0080;
+          color: $primary;
+        }
+      }
+      position: relative;
+      > ul {
+        border-radius: 20px;
+        z-index: 100;
+        position: absolute;
+        top: 100%;
+        left: -20px;
+        padding: 33px 0 0 0;
+        pointer-events: none;
+        opacity: 0;
+        list-style: none;
+        background-color: black;
+        transition: opacity 0.2s ease;
+        display: flex;
+        flex-direction: column;
+        width: max-content;
+        > li {
+          margin: 0;
+          width: 100%;
+          &:last-child > a {
+            padding-bottom: 10px;
+            border-radius: 0 0 20px 20px;
+          }
+          > a {
+            padding: 8px 20px;
+            color: white;
+            display: block;
+            text-decoration: none;
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+      &:hover {
+        > ul {
+          opacity: 1;
+          pointer-events: auto;
+          > li a:hover {
+            background-color: $primary;
+          }
         }
       }
     }
