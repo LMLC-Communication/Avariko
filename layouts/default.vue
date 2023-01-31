@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="page">
     <Navbar />
     <slot />
     <Footer />
@@ -37,5 +37,8 @@ h2 {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+#page {
+  padding-top: 80px;
 }
 </style>

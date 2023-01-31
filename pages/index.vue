@@ -12,9 +12,15 @@
       </div>
     </div>
     <div class="quotation">
-      <h3>Transformez votre corps,<br />dépassez vos limites,<br />atteignez vos objectifs</h3>
-      <h4><em>Faites du</em> <span>Crossfit</span></h4>
-      <button>EN SAVOIR PLUS</button>
+      <ThreeScene />
+      <ThreeSceneMirror class="mirror" />
+      <h3 data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
+        Transformez votre corps,<br />dépassez vos limites,<br />atteignez vos objectifs
+      </h3>
+      <h4 data-aos="zoom-in" data-aos-duration="400" data-aos-anchor-placement="bottom-bottom">
+        <em>Faites du</em> <span>Crossfit</span>
+      </h4>
+      <button data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">EN SAVOIR PLUS</button>
     </div>
     <div class="actualites">
       <h2>Actualités</h2>
@@ -53,16 +59,17 @@ button {
   border-radius: 200px;
   transition: border-color 0.1s ease, background-color 0.1s ease;
   animation: fade 2s;
+  transition: background-color 0.1s;
   &:hover {
     border-color: transparent;
-    background-color: color.adjust($primary, $alpha: -0.4);
+    background-color: color.adjust($primary, $alpha: -0.5);
 
     backdrop-filter: blur(20px);
     // blur background only
   }
 }
 .hero {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 80px);
   width: 100%;
   position: relative;
   video {
@@ -179,7 +186,11 @@ h4 {
 .actualites {
   background-color: white;
   h2 {
-    color: black; 
+    color: black;
   }
+}
+
+.mirror {
+  transform: translate(-540px);
 }
 </style>

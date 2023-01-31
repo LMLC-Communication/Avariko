@@ -2,6 +2,7 @@
   <div>
     <h1>Coachs</h1>
     <h2>Présentation des coachs</h2>
+    
   </div>
 </template>
 

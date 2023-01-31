@@ -1,0 +1,142 @@
+{
+  "accessors": [
+    {
+      "bufferView": 0,
+      "componentType": 5126,
+      "count": 12110,
+      "max": [
+        16.80218505859375,
+        24.868528366088867,
+        34.314910888671875
+      ],
+      "min": [
+        -16.802175521850586,
+        -24.868528366088867,
+        -16.729061126708984
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 12,
+      "componentType": 5126,
+      "count": 12110,
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5125,
+      "count": 69696,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 387520,
+      "byteStride": 32,
+      "target": 34962,
+      "byteOffset": 0
+    },
+    {
+      "buffer": 0,
+      "byteLength": 278784,
+      "byteOffset": 387520,
+      "target": 34963
+    }
+  ],
+  "buffers": [
+    {
+      "uri": "poids_data.bin",
+      "byteLength": 666304
+    }
+  ],
+  "materials": [
+    {
+      "name": "PhysicalMaterial",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "weights_28kg",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "matrix": [
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        0.01,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "mesh": 0,
+      "name": "weights_28kg"
+    },
+    {
+      "children": [
+        0
+      ],
+      "matrix": [
+        8.421377373224457e-9,
+        2.1326715682334907e-7,
+        -0.7062022686004639,
+        0,
+        0.7062022686004639,
+        0.0000017454555063523003,
+        8.421904951205761e-9,
+        0,
+        0.0000017454555063523003,
+        -0.7062022686004639,
+        -2.1326714261249435e-7,
+        0,
+        -0.5561151123046875,
+        0.24233631134033204,
+        -0.4278263092041016,
+        1
+      ]
+    }
+  ],
+  "scenes": [
+    {
+      "nodes": [
+        1
+      ]
+    }
+  ]
+}

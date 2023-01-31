@@ -26,4 +26,11 @@ export default defineNuxtConfig({
     preset: 'vercel-edge',
   },
   css: ['~/assets/fonts/blender-pro/stylesheet.css'],
+  plugins: [
+    { src: '@/plugins/aos', ssr: false, mode: 'client' },
+    // '@/plugins/three.js'
+  ],
+  build: {
+    transpile: ['treejs'],
+  },
 });
