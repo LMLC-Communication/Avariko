@@ -1,8 +1,11 @@
 <template>
   <header>
     <nav>
-      <nuxt-link to="/">
+      <!-- <nuxt-link to="/">
         <img src="~/assets/images/logo_white.svg" alt="Nuxt Logo" />
+      </nuxt-link> -->
+      <nuxt-link to="/" class="menu_title">
+        AVARIKO ATHLETICS
       </nuxt-link>
       <ul>
         <li>
@@ -69,6 +72,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+.menu_title {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
 header {
   z-index: 10;
   display: inline-block;
@@ -92,7 +101,7 @@ nav {
     }
   }
   img {
-    width: 80px;
+    width: 140px;
   }
   ul {
     margin-right: 20px;

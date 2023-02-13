@@ -28,7 +28,7 @@ h2 {
   color: white;
 }
 #nuxt {
-  min-height: calc(100vh - 80px);
+  min-height: calc(100vh - 50px);
 }
 .fade-enter-active,
 .fade-leave-active {
@@ -39,6 +39,6 @@ h2 {
   opacity: 0;
 }
 #page {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 </style>

@@ -5,8 +5,10 @@
       <div class="hero__content">
         <h4 class="hero__content__subtitle">REJOIGNEZ-NOUS POUR VOUS DÉPASSER</h4>
         <h1 class="hero__content__title">
-          <div><span>CROSSFIT</span></div>
           <div><span>AVARIKO</span></div>
+          <div><span>ATHLETICS</span></div>
+
+          <!-- <img src="~/assets/images/logo_white.svg" alt="Nuxt Logo" class="logo" /> -->
         </h1>
         <button>EN SAVOIR PLUS</button>
       </div>
@@ -48,6 +50,16 @@ export default {};
 <style lang="scss" scoped>
 @use 'sass:color';
 
+img.logo {
+  width: 160px;
+  animation: fade 2s;
+  float: left;
+}
+
+.hero__content__subtitle {
+  margin-bottom: 20px;
+}
+
 button {
   cursor: pointer;
   background-color: transparent;
@@ -69,7 +81,7 @@ button {
   }
 }
 .hero {
-  height: calc(100vh - 80px);
+  height: calc(100vh - 50px);
   width: 100%;
   position: relative;
   video {
