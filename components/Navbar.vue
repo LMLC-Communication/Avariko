@@ -5,9 +5,13 @@
         <img src="~/assets/images/logo_white.svg" alt="Nuxt Logo" />
       </nuxt-link> -->
       <nuxt-link to="/" class="menu_title">
-        AVARIKO ATHLETICS
+        <img src="../assets/images/logo_white.svg" alt="Nuxt Logo" class="logo" />
+        <span>
+          AVARIKO<br />
+          ATHLETICS
+        </span>
       </nuxt-link>
-      <ul>
+      <!-- <ul>
         <li>
           <nuxt-link to="/progression">Progression</nuxt-link>
           <ul>
@@ -60,7 +64,7 @@
         <li>
           <nuxt-link to="/horaires-et-localisation">Horaires et localisation</nuxt-link>
         </li>
-      </ul>
+      </ul> -->
     </nav>
   </header>
 </template>
@@ -73,10 +77,21 @@ export default {
 
 <style lang="scss" scoped>
 
+$navbar-height: 90px;
 .menu_title {
-  font-size: 30px;
+  font-size: 20px;
   color: white;
   text-decoration: none;
+  display: flex;
+  padding: 20px 0;
+  img {
+    height: 50px;
+    width: 90px;
+  }
+  span {
+    display: block;
+    text-align: center;
+  }
 }
 header {
   z-index: 10;
@@ -155,6 +170,9 @@ nav {
         > ul {
           opacity: 1;
           pointer-events: auto;
+          > li a {
+            transition: background-color 0.2s ease;
+          }
           > li a:hover {
             background-color: $primary;
           }

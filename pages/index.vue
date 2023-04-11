@@ -3,7 +3,7 @@
     <div class="hero">
       <video src="@/assets/videos/intro.mp4" autoplay loop muted></video>
       <div class="hero__content">
-        <h4 class="hero__content__subtitle">REJOIGNEZ-NOUS POUR VOUS DÉPASSER</h4>
+        <h4 class="hero__content__subtitle">DÉPASSEZ VOS LIMITES</h4>
         <h1 class="hero__content__title">
           <div><span>AVARIKO</span></div>
           <div><span>ATHLETICS</span></div>
@@ -24,7 +24,51 @@
       </h4>
       <button data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">EN SAVOIR PLUS</button>
     </div>
-    <div class="actualites">
+    <main>
+      <article>
+        <h2 data-aos="fade">Philosophie</h2>
+        <p data-aos="fade">
+          Avariko Athletics est une <span>salle unique en son genre</span>, qui mélange
+          <span>disciplines, cultures, profils</span>, pour proposer un service adapté et <span>sur mesure</span> à tous
+          ses clients.
+          <br />
+          <br />
+          <br />
+          Nous attachons autant d’importance à <span>la performance</span> dans la vie au quotidien
+          <span>« le mieux vivre »</span> qu’à la <span>performance sportive</span>
+        </p>
+      </article>
+      <article>
+        <h2 data-aos="fade">Notre Mission</h2>
+        <p data-aos="fade">
+          Vous aider à devenir la meilleure version de vous-même, physiquement et mentalement, en vous montrant comment
+          bouger votre corps correctement et sans blessures.
+          <br />
+          <br />
+          <br />
+          Le programme que nous avons développé, accompagnés de coachs reconnus à l’international et de professionnels
+          de la santé (ostéopathe, kiné), est unique, testé et approuvé, et s’adapte à tous.
+          <br />
+          <br />
+          <br />
+          Nous voulons que nos clients s’épanouissent dans leurs vies personnelles, en dehors de notre salle de sport,
+          en atteignant leurs objectifs sportifs mais aussi de vie.
+        </p>
+      </article>
+      <article>
+        <h2 data-aos="fade">Pour qui ?</h2>
+        <p data-aos="fade">
+          Peu importe ton âge, ton expérience sportive, ta condition physique, nous t’accompagnons pour devenir la
+          meilleure version de toi!
+          <br />
+          <br />
+          <br />
+          Débutants, blessés, sportifs de haut niveau, enfants, grand-parents, hommes et femmes, notre programme
+          s’adapte à tous!
+        </p>
+      </article>
+    </main>
+    <!-- <div class="actualites">
       <h2>Actualités</h2>
       <ul>
         <li v-for="n in 10" :key="n + 1">
@@ -39,7 +83,7 @@
           </nuxt-link>
         </li>
       </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -49,6 +93,8 @@ export default {};
 
 <style lang="scss" scoped>
 @use 'sass:color';
+
+$navbar-height: 90px;
 
 img.logo {
   width: 160px;
@@ -81,7 +127,7 @@ button {
   }
 }
 .hero {
-  height: calc(100vh - 50px);
+  height: calc(100vh - #{$navbar-height});
   width: 100%;
   position: relative;
   video {
@@ -165,6 +211,46 @@ h4 {
   align-items: center;
   justify-content: center;
   padding: 80px;
+}
+
+article {
+  margin: auto;
+  width: 1000px;
+  color: white;
+  margin-top: 400px;
+  margin-bottom: 100px;
+  h2 {
+    font-family: 'Blender Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 68px;
+    /* identical to box height, or 68% */
+
+    // border: 3px solid #ffffff;
+  }
+  p {
+    color: white;
+    font-family: 'Blender Pro';
+    font-style: italic;
+    font-weight: 701;
+    font-size: 27px;
+    line-height: 90%;
+    /* or 22px */
+
+    text-transform: uppercase;
+
+    span {
+      color: hsla(183, 100%, 31%, 1);
+      font-style: normal;
+    }
+  }
+}
+
+main {
+  background: url('/bg.png');
+  background-size: cover;
+  padding: 200px 0;
 }
 
 @keyframes fade {

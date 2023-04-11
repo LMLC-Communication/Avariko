@@ -9,6 +9,8 @@
 <script></script>
 
 <style lang="scss">
+$navbar-height: 90px;
+
 html {
   font-family: 'Blender Pro';
   height: 100%;
@@ -28,7 +30,7 @@ h2 {
   color: white;
 }
 #nuxt {
-  min-height: calc(100vh - 50px);
+  min-height: calc(100vh - #{$navbar-height});
 }
 .fade-enter-active,
 .fade-leave-active {
@@ -39,6 +41,6 @@ h2 {
   opacity: 0;
 }
 #page {
-  padding-top: 50px;
+  padding-top: $navbar-height;
 }
 </style>
