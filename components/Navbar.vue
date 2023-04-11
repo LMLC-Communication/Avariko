@@ -11,60 +11,51 @@
           ATHLETICS
         </span>
       </nuxt-link>
-      <!-- <ul>
+      <ul>
         <li>
-          <nuxt-link to="/progression">Progression</nuxt-link>
+          <nuxt-link to="/">Qui Sommes Nous</nuxt-link>
           <ul>
             <li>
-              <nuxt-link to="/progression#salle-de-presentation">Salle de présentation</nuxt-link>
+              <nuxt-link to="/#philosophie">Philosophie</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/progression#philosophie">Philosophie</nuxt-link>
+              <nuxt-link to="/#notre-mission">Notre mission</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/progression#objectifs">Objectifs</nuxt-link>
+              <nuxt-link to="/#pour-qui">Pour qui?</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/progression#ambiance">Ambiance</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/progression#evaluation">Évaluation</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/progression#suivi">Suivi</nuxt-link>
+              <nuxt-link to="/#la-salle">La salle</nuxt-link>
             </li>
           </ul>
         </li>
         <li>
-          <nuxt-link to="/pratique">Pratique</nuxt-link>
+          <nuxt-link to="/coachs">Les coachs</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link to="/offre">Notre offre</nuxt-link>
           <ul>
             <li>
-              <nuxt-link to="/pratique#type-d-exercices">Types d’exercices</nuxt-link>
+              <nuxt-link to="/offre#type-d-exercices">L’assessment : l’évaluation corporelle</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/pratique#avec-quel-matos-on-bosse">Avec quel matos on bosse</nuxt-link>
+              <nuxt-link to="/offre#avec-quel-matos-on-bosse">Le programme</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/pratique#teens">Teens</nuxt-link>
+              <nuxt-link to="/offre#teens">Témoignage</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/pratique#kids">Kids</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/pratique#groupe">Groupe</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/pratique#solo">Solo</nuxt-link>
+              <nuxt-link to="/offre#kids">Seminaire</nuxt-link>
             </li>
           </ul>
         </li>
         <li>
-          <nuxt-link to="/coachs">Coachs</nuxt-link>
+          <nuxt-link to="/horaires-et-tarifs">Horaires et tarifs</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/horaires-et-localisation">Horaires et localisation</nuxt-link>
+          <nuxt-link to="/contact">Contactez nous!</nuxt-link>
         </li>
-      </ul> -->
+      </ul>
     </nav>
   </header>
 </template>
@@ -76,7 +67,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
 $navbar-height: 90px;
 .menu_title {
   font-size: 20px;

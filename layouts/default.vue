@@ -43,4 +43,55 @@ h2 {
 #page {
   padding-top: $navbar-height;
 }
+
+main {
+  background: url('/bg.png');
+  background-size: cover;
+  padding: 200px 0;
+}
+
+article {
+  margin: auto;
+  max-width: 1200px;
+  color: white;
+  margin-top: 400px;
+  margin-bottom: 100px;
+  h2 {
+    font-family: 'Blender Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 68px;
+    /* identical to box height, or 68% */
+
+    // border: 3px solid #ffffff;
+  }
+  h3 {
+    font-family: 'Blender Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 68px;
+    /* identical to box height, or 68% */
+
+    // border: 3px solid #ffffff;
+  }
+  p,
+  li {
+    color: white;
+    font-family: 'Blender Pro';
+    font-style: italic;
+    font-weight: 701;
+    font-size: 27px;
+    line-height: 90%;
+    /* or 22px */
+
+    text-transform: uppercase;
+
+    span {
+      color: hsla(183, 100%, 31%, 1);
+      font-style: normal;
+    }
+  }
+}
 </style>

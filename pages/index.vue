@@ -67,6 +67,13 @@
           s’adapte à tous!
         </p>
       </article>
+      <article>
+        <h2>La salle</h2>
+        <p>
+          Une superficie d’entrainement de plus de 800m2 Matériel professionnel haut de gamme Vestiaires hommes et
+          femmes Grand parking gratuit Skate-park intérieur et espace jeu pour les enfants
+        </p>
+      </article>
     </main>
     <!-- <div class="actualites">
       <h2>Actualités</h2>
@@ -211,46 +218,6 @@ h4 {
   align-items: center;
   justify-content: center;
   padding: 80px;
-}
-
-article {
-  margin: auto;
-  width: 1000px;
-  color: white;
-  margin-top: 400px;
-  margin-bottom: 100px;
-  h2 {
-    font-family: 'Blender Pro';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 100px;
-    line-height: 68px;
-    /* identical to box height, or 68% */
-
-    // border: 3px solid #ffffff;
-  }
-  p {
-    color: white;
-    font-family: 'Blender Pro';
-    font-style: italic;
-    font-weight: 701;
-    font-size: 27px;
-    line-height: 90%;
-    /* or 22px */
-
-    text-transform: uppercase;
-
-    span {
-      color: hsla(183, 100%, 31%, 1);
-      font-style: normal;
-    }
-  }
-}
-
-main {
-  background: url('/bg.png');
-  background-size: cover;
-  padding: 200px 0;
 }
 
 @keyframes fade {
