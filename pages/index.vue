@@ -68,8 +68,8 @@
         </p>
       </article>
       <article>
-        <h2>La salle</h2>
-        <p>
+        <h2 data-aos="fade">La salle</h2>
+        <p data-aos="fade">
           Une superficie d’entrainement de plus de 800m2 Matériel professionnel haut de gamme Vestiaires hommes et
           femmes Grand parking gratuit Skate-park intérieur et espace jeu pour les enfants
         </p>
