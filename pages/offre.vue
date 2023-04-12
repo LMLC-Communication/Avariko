@@ -1,6 +1,9 @@
 <template>
   <div>
-    <h1>Notre Offre</h1>
+    <!-- <h1>Notre Offre</h1> -->
+    <div class="hero">
+      <img src="../assets/images/CROSSFIT AVARIKO-020.jpg" alt="" />
+    </div>
     <main>
       <article>
         <h2>Présentation des coachs</h2>
@@ -75,4 +78,20 @@
 export default {};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.hero {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
+  }
+}
+</style>

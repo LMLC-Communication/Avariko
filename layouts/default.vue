@@ -6,8 +6,6 @@
   </div>
 </template>
 
-<script></script>
-
 <style lang="scss">
 $navbar-height: 90px;
 
@@ -47,14 +45,14 @@ h2 {
 main {
   background: url('/bg.png');
   background-size: cover;
-  padding: 200px 0;
+  padding: 50px 0;
 }
 
 article {
   margin: auto;
   max-width: 1200px;
   color: white;
-  margin-top: 400px;
+  margin-top: 100px;
   margin-bottom: 100px;
   h2 {
     font-family: 'Blender Pro';
