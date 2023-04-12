@@ -1,13 +1,13 @@
 <template>
   <div>
     <div class="hero">
-      <img src="../assets/images/CROSSFIT AVARIKO-421.jpg" alt="" />
+      <img src="@/assets/images/CROSSFIT AVARIKO-421.jpg" alt="" />
     </div>
     <main>
       <article>
         <h2>Présentation des coachs</h2>
         <h3>Coach Vince #ohfuck</h3>
-        <img id="coachImage" src="../assets/images/CROSSFIT AVARIKO-666.jpg" alt="" />
+        <img id="coachImage" src="@/assets/images/CROSSFIT AVARIKO-666.jpg" alt="" />
         <ul>
           <li>Arrivé tout droit du Canada, derrière la communauté AVARIKO Athletics, il y a Coach Vince !</li>
           <li>Un coach solide, à la personnalité atypique que tu vas aimer autant que détester ;)</li>

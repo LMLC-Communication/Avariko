@@ -2,7 +2,7 @@
   <div>
     <!-- <h1>Notre Offre</h1> -->
     <div class="hero">
-      <img src="../assets/images/CROSSFIT AVARIKO-020.jpg" alt="" />
+      <img src="@/assets/images/CROSSFIT AVARIKO-020.jpg" alt="" />
     </div>
     <main>
       <article>
