@@ -1,24 +1,25 @@
 <template>
   <div>
     <!-- <h1>Notre Offre</h1> -->
-    <div class="hero">
+    <div class="heros">
       <img src="@/assets/images/CROSSFIT_AVARIKO-020.jpg" alt="" />
     </div>
     <main>
-      <article>
-        <h2>Présentation des coachs</h2>
-        <p></p>
-        <h2>Temoignage</h2>
+      <article id="temoignage">
+        <h2>Témoignage</h2>
         <p>XXXXXXX</p>
-
-        <h2>Séminaires et stage</h2>
-        Nous proposons régulièrement des séminaires et stages sur différentes thématiques à nos clients (haltérophilie,
-        stages vacances enfants etc).<br />
-        Nous accompagnons également des clubs sportifs dans leurs préparation physique : rugby, judo etc…<br />
-        Enfin pour les professionnels sprotifs et coachs, nous pouvons vous accueillir si vous souhaitez organiser votre
-        séminaire ou formation chez nous !
       </article>
-      <article>
+      <article id="seminaire">
+        <h2>Séminaires et stage</h2>
+        <p>
+          Nous proposons régulièrement des séminaires et stages sur différentes thématiques à nos clients
+          (haltérophilie, stages vacances enfants etc).<br /><br /><br />
+          Nous accompagnons également des clubs sportifs dans leurs préparation physique : rugby, judo etc…<br /><br /><br />
+          Enfin pour les professionnels sprotifs et coachs, nous pouvons vous accueillir si vous souhaitez organiser
+          votre séminaire ou formation chez nous !
+        </p>
+      </article>
+      <article id="programme">
         <h2>Le programme</h2>
         <p>
           Chez Avariko Athletics les programmes d’entraînement sont réfléchis, créés et testés EN INTERNE par les
@@ -48,7 +49,7 @@
           utilise des sleds, des sacs de sebles et des haltères
         </p>
       </article>
-      <article>
+      <article id="assessment">
         <h2>L’ Assessment : l’évaluation corporelle</h2>
         <p>
           Parce que chaque client est unique, avec sa propre histoire et sa propre expérience, Coach Vince s’est
@@ -75,11 +76,48 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    initParallax() {
+      const heroImage = document.querySelector('.hero img');
+      if (heroImage) {
+        const parallaxFactor = 0.3;
+        const smoothingFactor = 0.3; // Augmenter cette valeur pour accélérer l'animation
+
+        let targetOffset = 0;
+        let currentOffset = 0;
+
+        const updateParallax = () => {
+          currentOffset += (targetOffset - currentOffset) * smoothingFactor;
+          heroImage.style.transform = `translateY(-50%) translateY(${currentOffset}px)`;
+          requestAnimationFrame(updateParallax);
+        };
+
+        window.addEventListener('scroll', () => {
+          const scrollPosition = window.pageYOffset;
+          targetOffset = scrollPosition * parallaxFactor;
+        });
+
+        requestAnimationFrame(updateParallax);
+      } else {
+        setTimeout(() => {
+          this.initParallax();
+        }, 200);
+      }
+    },
+  },
+  mounted() {
+    this.$nextTick(() => {
+      setTimeout(() => {
+        this.initParallax();
+      }, 500);
+    });
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-.hero {
+.heros {
   position: relative;
   width: 100%;
   height: 70vh;

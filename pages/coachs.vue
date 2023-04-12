@@ -1,14 +1,14 @@
 <template>
   <div>
-    <div class="hero">
+    <div class="heros">
       <img src="@/assets/images/CROSSFIT_AVARIKO-421.jpg" alt="" />
     </div>
     <main>
       <article>
-        <h2>Présentation des coachs</h2>
-        <h3>Coach Vince #ohfuck</h3>
+        <h2 data-aos="fade">Présentation des coachs</h2>
+        <h3 data-aos="fade">Coach Vince #ohfuck</h3>
         <img id="coachImage" src="@/assets/images/CROSSFIT_AVARIKO-666.jpg" alt="" />
-        <ul>
+        <ul data-aos="fade">
           <li>Arrivé tout droit du Canada, derrière la communauté AVARIKO Athletics, il y a Coach Vince !</li>
           <li>Un coach solide, à la personnalité atypique que tu vas aimer autant que détester ;)</li>
           <li>
@@ -21,8 +21,8 @@
             toujours approfondir ses connaissances. Un bon coach a lui-même un coach!
           </li>
         </ul>
-        <p>Sa particularité : Il maitrise à la perfection le Franglais<br /></p>
-        <h3>Coach Aurélien</h3>
+        <p data-aos="fade">Sa particularité : Il maitrise à la perfection le Franglais<br /></p>
+        <h3 data-aos="fade">Coach Aurélien</h3>
       </article>
     </main>
   </div>
@@ -34,74 +34,89 @@ export default {
     initAnimation() {
       const cursor = document.querySelector('#coachImage');
       if (cursor) {
-        const initialX = cursor.getBoundingClientRect().left;
-        const initialY = cursor.getBoundingClientRect().top;
+        const moveFactor = 0.05;
+
+        let initialX = cursor.offsetLeft;
+        let initialY = cursor.offsetTop;
         let targetX = initialX;
         let targetY = initialY;
         let currentX = initialX;
         let currentY = initialY;
 
-        const moveFactor = 0.05; // ajustez cette valeur pour modifier la sensibilité du mouvement de l'image
-
-        // const updatePosition = () => {
-        //   currentX += (targetX - currentX) * 0.1;
-        //   currentY += (targetY - currentY) * 0.1;
-        //   cursor.style.left = currentX + 'px';
-        //   cursor.style.top = currentY + 'px';
-        //   requestAnimationFrame(updatePosition);
-        // };
-
-        // document.addEventListener('mousemove', e => {
-        //   const offsetX = (e.pageX - window.innerWidth / 2) * moveFactor;
-        //   const offsetY = (e.pageY - window.innerHeight / 2) * moveFactor;
-        //   targetX = initialX + offsetX;
-        //   targetY = initialY + offsetY;
-        // });
-
         cursor.addEventListener('mouseover', () => {
           cursor.style.zIndex = '2';
-          cursor.style.transform = 'rotate(0deg) scale(1.1)';
+          cursor.style.transform = 'translate(-50%, -50%) rotate(0deg) scale(1.1)';
           cursor.style.filter = 'brightness(1)';
         });
 
         cursor.addEventListener('mouseout', () => {
           cursor.style.zIndex = '0';
-          cursor.style.transform = 'rotate(5deg) scale(1)';
+          cursor.style.transform = 'translate(-50%, -50%) rotate(5deg) scale(1)';
           cursor.style.filter = 'brightness(0.6)';
+        });
+
+        const updatePosition = () => {
+          currentX += (targetX - currentX) * 0.1;
+          currentY += (targetY - currentY) * 0.1;
+          cursor.style.left = currentX + 'px';
+          cursor.style.top = currentY + 'px';
+          requestAnimationFrame(updatePosition);
+        };
+
+        document.addEventListener('mousemove', e => {
+          const offsetX = (e.clientX - window.innerWidth / 2) * moveFactor;
+          const offsetY = (e.clientY - window.innerHeight / 2) * moveFactor;
+          targetX = initialX + offsetX;
+          targetY = initialY + offsetY;
         });
 
         requestAnimationFrame(updatePosition);
       } else {
         setTimeout(() => {
           this.initAnimation();
-        }, 100);
+        }, 200);
+      }
+    },
+    initParallax() {
+      const heroImage = document.querySelector('.heros img');
+      if (heroImage) {
+        const parallaxFactor = 0.3;
+        const smoothingFactor = 0.3; // Augmenter cette valeur pour accélérer l'animation
+
+        let targetOffset = 0;
+        let currentOffset = 0;
+
+        const updateParallax = () => {
+          currentOffset += (targetOffset - currentOffset) * smoothingFactor;
+          heroImage.style.transform = `translateY(-50%) translateY(${currentOffset}px)`;
+          requestAnimationFrame(updateParallax);
+        };
+
+        window.addEventListener('scroll', () => {
+          const scrollPosition = window.pageYOffset;
+          targetOffset = scrollPosition * parallaxFactor;
+        });
+
+        requestAnimationFrame(updateParallax);
+      } else {
+        setTimeout(() => {
+          this.initParallax();
+        }, 200);
       }
     },
   },
   mounted() {
     this.$nextTick(() => {
-      this.initAnimation();
+      setTimeout(() => {
+        this.initAnimation();
+        this.initParallax();
+      }, 500);
     });
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.hero {
-  position: relative;
-  width: 100%;
-  height: 70vh;
-  overflow: hidden;
-  img {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
-    transition: filter 0.3s ease;
-  }
-}
 article {
   position: relative;
   h2,
@@ -114,9 +129,9 @@ article {
   }
   img {
     position: absolute;
-    top: 30%;
+    top: 70%;
     left: 60%;
-    transform: rotate(5deg);
+    transform: translate(-50%, -50%) rotate(5deg);
     z-index: 0;
     height: 50%;
     object-fit: cover;

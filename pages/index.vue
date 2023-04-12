@@ -25,7 +25,9 @@
       <button data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">EN SAVOIR PLUS</button>
     </div>
     <main>
-      <article>
+      <article id="philosophie">
+        <img src="@/assets/images/CROSSFIT_AVARIKO-107.jpg" alt="" />
+        <img src="@/assets/images/CROSSFIT_AVARIKO-016.jpg" alt="" />
         <h2 data-aos="fade">Philosophie</h2>
         <p data-aos="fade">
           Avariko Athletics est une <span>salle unique en son genre</span>, qui mélange
@@ -38,40 +40,60 @@
           <span>« le mieux vivre »</span> qu’à la <span>performance sportive</span>
         </p>
       </article>
-      <article>
+      <article id="mission">
+        <img src="@/assets/images/CROSSFIT_AVARIKO-107.jpg" alt="" />
+        <img src="@/assets/images/CROSSFIT_AVARIKO-016.jpg" alt="" />
         <h2 data-aos="fade">Notre Mission</h2>
         <p data-aos="fade">
-          Vous aider à devenir la meilleure version de vous-même, physiquement et mentalement, en vous montrant comment
-          bouger votre corps correctement et sans blessures.
+          Vous aider à devenir la meilleure version de vous-même, <span>physiquement et mentalement</span>, en vous
+          montrant comment <span>bouger votre corps correctement et sans blessures</span>.
           <br />
           <br />
           <br />
-          Le programme que nous avons développé, accompagnés de coachs reconnus à l’international et de professionnels
-          de la santé (ostéopathe, kiné), est unique, testé et approuvé, et s’adapte à tous.
+          Le programme que nous avons développé, accompagnés de
+          <span>coachs reconnus à l’international et de professionnels de la santé</span>
+          (ostéopathe, kiné), est <span>unique</span>, <span>testé</span> et <span>approuvé</span>, et
+          <span>s’adapte à tous</span>.
           <br />
           <br />
           <br />
-          Nous voulons que nos clients s’épanouissent dans leurs vies personnelles, en dehors de notre salle de sport,
-          en atteignant leurs objectifs sportifs mais aussi de vie.
+          Nous voulons que nos clients <span>s’épanouissent dans leurs vies personnelles</span>,
+          <span>en dehors</span> de notre salle de sport, en <span>atteignant leurs objectifs</span> sportifs mais aussi
+          <span>de vie</span>.
         </p>
       </article>
-      <article>
+      <article id="qui">
+        <img src="@/assets/images/CROSSFIT_AVARIKO-107.jpg" alt="" />
+        <img src="@/assets/images/CROSSFIT_AVARIKO-016.jpg" alt="" />
         <h2 data-aos="fade">Pour qui ?</h2>
         <p data-aos="fade">
-          Peu importe ton âge, ton expérience sportive, ta condition physique, nous t’accompagnons pour devenir la
-          meilleure version de toi!
+          Peu importe ton <span>âge</span>, ton <span>expérience sportive</span>, ta <span>condition physique</span>,
+          nous t’accompagnons pour devenir <span>la meilleure version de toi !</span>
           <br />
           <br />
           <br />
-          Débutants, blessés, sportifs de haut niveau, enfants, grand-parents, hommes et femmes, notre programme
-          s’adapte à tous!
+          Débutants, blessés, sportifs de haut niveau, enfants, grand-parents, hommes et femmes,
+          <span>notre programme s’adapte à tous !</span>
         </p>
       </article>
-      <article>
+      <article id="salle">
+        <img src="@/assets/images/CROSSFIT_AVARIKO-107.jpg" alt="" />
+        <img src="@/assets/images/CROSSFIT_AVARIKO-016.jpg" alt="" />
         <h2 data-aos="fade">La salle</h2>
         <p data-aos="fade">
-          Une superficie d’entrainement de plus de 800m2 Matériel professionnel haut de gamme Vestiaires hommes et
-          femmes Grand parking gratuit Skate-park intérieur et espace jeu pour les enfants
+          Une superficie d’entrainement de <span>plus de 800m2</span>
+          <br />
+          <br />
+          Matériel <span>professionnel haut de gamme</span>
+          <br />
+          <br />
+          Vestiaires <span>hommes</span> et <span>femmes</span>
+          <br />
+          <br />
+          <span>Grand parking</span> gratuit
+          <br />
+          <br />
+          <span>Skate-park intérieur</span> et <span>espace jeu</span> pour les enfants
         </p>
       </article>
     </main>

@@ -1,12 +1,12 @@
 <template>
   <div>
-    <div class="hero">
+    <div class="heros">
       <img src="@/assets/images/CROSSFIT_AVARIKO-012.jpg" alt="" />
     </div>
     <main>
       <article>
         <!-- <h1>Horaires et localisation</h1> -->
-        <h2>HORAIRES :</h2>
+        <h2>HORAIRES</h2>
 
         <p>
           Adultes<br />
@@ -43,11 +43,48 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    initParallax() {
+      const heroImage = document.querySelector('.heros img');
+      if (heroImage) {
+        const parallaxFactor = 0.3;
+        const smoothingFactor = 0.3; // Augmenter cette valeur pour accélérer l'animation
+
+        let targetOffset = 0;
+        let currentOffset = 0;
+
+        const updateParallax = () => {
+          currentOffset += (targetOffset - currentOffset) * smoothingFactor;
+          heroImage.style.transform = `translateY(-50%) translateY(${currentOffset}px)`;
+          requestAnimationFrame(updateParallax);
+        };
+
+        window.addEventListener('scroll', () => {
+          const scrollPosition = window.pageYOffset;
+          targetOffset = scrollPosition * parallaxFactor;
+        });
+
+        requestAnimationFrame(updateParallax);
+      } else {
+        setTimeout(() => {
+          this.initParallax();
+        }, 200);
+      }
+    },
+  },
+  mounted() {
+    this.$nextTick(() => {
+      setTimeout(() => {
+        this.initParallax();
+      }, 500);
+    });
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-.hero {
+.heros {
   position: relative;
   width: 100%;
   height: 70vh;

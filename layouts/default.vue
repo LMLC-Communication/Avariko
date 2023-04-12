@@ -13,6 +13,7 @@ html {
   font-family: 'Blender Pro';
   height: 100%;
   background-color: black;
+  scroll-behavior: smooth;
 }
 a,
 button,
@@ -52,13 +53,13 @@ article {
   margin: auto;
   max-width: 1200px;
   color: white;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 100px;
+  margin-bottom: 200px;
   h2 {
     font-family: 'Blender Pro';
     font-style: normal;
     font-weight: 900;
-    font-size: 100px;
+    font-size: 60px;
     line-height: 68px;
     /* identical to box height, or 68% */
 
@@ -80,8 +81,9 @@ article {
     font-family: 'Blender Pro';
     font-style: italic;
     font-weight: 701;
-    font-size: 27px;
-    line-height: 90%;
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 400;
     /* or 22px */
 
     text-transform: uppercase;
@@ -90,6 +92,61 @@ article {
       color: hsla(183, 100%, 31%, 1);
       font-style: normal;
     }
+  }
+}
+.heros {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  overflow: hidden;
+  img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+    transition: filter 0.3s ease;
+  }
+}
+
+article {
+  position: relative;
+  p {
+    z-index: 1;
+  }
+  > img {
+    position: absolute;
+    height: 200px;
+    z-index: 0;
+    filter: brightness(0.8);
+  }
+  > img:first-child {
+    left: 0;
+    top: 0;
+    transform: rotate(-7deg) translate(-50%, 50%);
+  }
+  > img:nth-child(2) {
+    right: 0;
+    bottom: 0;
+    transform: rotate(7deg) translate(50%, 50%);
+  }
+}
+
+.heros {
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-family: 'Blender Pro';
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 70px;
+    margin: auto;
   }
 }
 </style>

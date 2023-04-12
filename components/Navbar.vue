@@ -19,13 +19,13 @@
               <nuxt-link to="/#philosophie">Philosophie</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/#notre-mission">Notre mission</nuxt-link>
+              <nuxt-link to="/#mission">Notre mission</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/#pour-qui">Pour qui?</nuxt-link>
+              <nuxt-link to="/#qui">Pour qui?</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/#la-salle">La salle</nuxt-link>
+              <nuxt-link to="/#salle">La salle</nuxt-link>
             </li>
           </ul>
         </li>
@@ -36,16 +36,16 @@
           <nuxt-link to="/offre">Notre offre</nuxt-link>
           <ul>
             <li>
-              <nuxt-link to="/offre#type-d-exercices">L’assessment : l’évaluation corporelle</nuxt-link>
+              <nuxt-link to="/offre#temoignage">Témoignage</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/offre#avec-quel-matos-on-bosse">Le programme</nuxt-link>
+              <nuxt-link to="/offre#seminaire">Seminaire</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/offre#teens">Témoignage</nuxt-link>
+              <nuxt-link to="/offre#programme">Le programme</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/offre#kids">Seminaire</nuxt-link>
+              <nuxt-link to="/offre#assessment">L’assessment : l’évaluation corporelle</nuxt-link>
             </li>
           </ul>
         </li>
@@ -53,7 +53,7 @@
           <nuxt-link to="/horaires-et-tarifs">Horaires et tarifs</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/contact">Contactez nous!</nuxt-link>
+          <nuxt-link to="/contact">Contactez nous</nuxt-link>
         </li>
       </ul>
     </nav>
