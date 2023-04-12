@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="hero">
-      <img src="@/assets/images/CROSSFIT AVARIKO-146.jpg" alt="" />
+      <img src="@/assets/images/CROSSFIT_AVARIKO-146.jpg" alt="" />
     </div>
     <main>
       <article>
