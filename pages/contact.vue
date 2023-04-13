@@ -6,9 +6,9 @@
     </div>
     <main>
       <article>
-        <h2>CONTACT</h2>
+        <h2 data-aos="fade">CONTACT</h2>
 
-        <p>
+        <p data-aos="fade">
           Nous contacter par téléphone : <a href="tel:+33699323213">0699323213</a><br />
           <br />
           <a href="https://www.instagram.com/avariko_athletics/"
@@ -20,6 +20,7 @@
           <a href="https://goo.gl/maps/WzYHvTTQjLxEapch8" target="_blank">238 AVENUE DE SAINT AMAND 18570 TROUY NORD</a>
         </p>
         <iframe
+          data-aos="zoom-in"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.2662281134044!2d2.38386471561143!3d47.05462767915191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fa94219b46cf8d%3A0x20a77c98c948726b!2sAvariko%20Athletics!5e0!3m2!1sfr!2sfr!4v1681315279847!5m2!1sfr!2sfr"
           style="border: 0"
           allowfullscreen=""
@@ -100,6 +101,7 @@ a {
   text-decoration: none;
   transition: color 0.3s ease;
   margin-right: auto;
+  text-transform: lowercase;
   &:hover {
     color: $primary;
   }

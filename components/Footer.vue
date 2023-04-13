@@ -4,7 +4,7 @@
       <div></div>
       <div>
         &copy;{{ new Date().getFullYear() }}<br />
-        <a href="">mentions légales</a>
+        <nuxt-link to="mentions-legales">mentions légales</nuxt-link>
       </div>
       <div></div>
     </div>

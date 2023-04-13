@@ -10,7 +10,7 @@
 
           <!-- <img src="~/assets/images/logo_white.svg" alt="Nuxt Logo" class="logo" /> -->
         </h1>
-        <button>EN SAVOIR PLUS</button>
+        <button @click="scrollTo('philosophie')">EN SAVOIR PLUS</button>
       </div>
     </div>
     <div class="quotation">
@@ -133,7 +133,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  methods: {
+    scrollTo(id) {
+      const element = document.getElementById(id);
+      element.scrollIntoView();
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

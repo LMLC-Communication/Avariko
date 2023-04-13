@@ -9,7 +9,7 @@
         <!-- <h1>Horaires et localisation</h1> -->
         <h2 data-aos="fade">HORAIRES</h2>
         <div class="card__list">
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h4>Cours adultes</h4>
             <p>
               Lundi à vendredi<br />
@@ -19,7 +19,7 @@
               9H - 10H - 11H
             </p>
           </div>
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h4>Cours Enfants</h4>
             <p>
               KIDS (5 À 10 ANS)<br />
@@ -34,11 +34,11 @@
         </div>
         <h2 data-aos="fade">SÉANCES</h2>
         <div class="card__list">
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h5 class="title">1 séance</h5>
             <p><span>18€</span> / séance</p>
           </div>
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h5 class="title">10 séances</h5>
             <div class="discount">20€ d'économie</div>
             <p><span>160€</span> / les 10 séances</p>
@@ -46,15 +46,15 @@
         </div>
         <h2 data-aos="fade">ABONNEMENTS</h2>
         <div class="card__list">
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h5 class="title">3 mois - 3 séances par semaine</h5>
             <p><span>85€</span> / mois</p>
           </div>
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h5 class="title">3 mois - 4 séances par semaine</h5>
             <p><span>95€</span> / mois</p>
           </div>
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h5 class="title">3 mois - illimité</h5>
             <p><span>105€</span> / mois</p>
           </div>
@@ -62,11 +62,11 @@
         <p data-aos="fade">FRAIS DE CRÉATION DE COMPTE : <span>45€</span></p>
         <h2 data-aos="fade">COACHING PERSONNEL</h2>
         <div class="card__list">
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h5 class="title">1 séance</h5>
             <p><span>75€</span> / séance</p>
           </div>
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h5 class="title">4 séances</h5>
             <div class="discount">100€ d'économie</div>
             <p><span>200€</span> / les 4 séances</p>
@@ -74,22 +74,22 @@
         </div>
         <h2 data-aos="fade">KIDS (5 – 10 ANS)</h2>
         <div class="card__list">
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h5 class="title">1 séance</h5>
             <p><span>8€</span> / séance</p>
           </div>
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h5 class="title">1 mois</h5>
             <p><span>20€</span> / mois</p>
           </div>
         </div>
         <h2 data-aos="fade">TEENS (11 – 16 ANS)</h2>
         <div class="card__list">
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h5 class="title">1 séance</h5>
             <p><span>12€</span> / séance</p>
           </div>
-          <div class="card" data-aos="fade-up">
+          <div class="card" data-aos="zoom-in">
             <h5 class="title">1 mois</h5>
             <p><span>45€</span> / mois</p>
           </div>

@@ -45,29 +45,40 @@
         </div>
         <h2 data-aos="fade">Le programme</h2>
         <p data-aos="fade">
-          Chez Avariko Athletics les programmes d’entraînement sont réfléchis, créés et testés EN INTERNE par les
-          coachs.
+          Chez Avariko Athletics les programmes d’entraînement sont <span>réfléchis, créés et testés</span> EN INTERNE
+          par les coachs.
         </p>
+        <br />
         <p data-aos="fade">
           A l’image d’un chef qui s’inspire de plusieurs techniques et cultures, Vince sélectionne le meilleur de
           plusieurs disciplines (tels que le Cross training, StrongFit, l’Haltérophilie, la gymnastique) tout en
           s’appuyant sur sa propre expérience de sportif, de père de famille et sa culture internationale.
         </p>
+        <br />
         <p data-aos="fade">
-          Il a développé un programme pyramidale, permettant à TOUS d’acquérir les FONDATIONS, et ainsi de progresser et
-          de performer sans se blesser!
+          Il a développé un programme pyramidale, permettant à TOUS d’acquérir les FONDATIONS, et ainsi de
+          <span>progresser et de performer</span> sans se blesser!
         </p>
         <p data-aos="fade">→ REPOUSSE TES LIMITES 3X SEMAINES</p>
+        <br />
+        <br />
+        <h4 data-aos="fade">#4 WOD + SPORT</h4>
         <p data-aos="fade">
-          #4 WOD + SPORT<br />
-          Un vrai test de ton niveau de fitness qui va refléter ton travail au cours des niveaux ci-dessous et révéler
-          tes points faibles<br />
-          #3 W101/GYM : la technique <br />
+          Un vrai <span>test</span> de ton niveau de fitness qui va refléter ton travail au cours des niveaux ci-dessous
+          et révéler tes points faibles
+        </p>
+        <br />
+        <h4 data-aos="fade">#3 W101/GYM : la technique</h4>
+        <p data-aos="fade">
           W101 : des cours d’haltérophilie spécifique : sntach, clean & jerk <br />
-          GYM : des mouvements et exercices avec le poids du corps, pour améliorer tes compétences en gymnastique <br />
-          #2 SWEAT : brûle moi ces f***ing calories !<br />
-          Travaille ton cardio avec 3 machines : row, ski et velo <br />
-          #1 CLAM : la base<br />
+          GYM : des mouvements et exercices avec le poids du corps, pour améliorer tes compétences en gymnastique
+        </p>
+        <br />
+        <h4 data-aos="fade">#2 SWEAT : brûle moi ces f***ing calories !</h4>
+        <p data-aos="fade">Travaille ton cardio avec 3 machines : row, ski et velo</p>
+        <br />
+        <h4 data-aos="fade">#1 CLAM : la base</h4>
+        <p data-aos="fade">
           La fondation de notre gym, un programme constriut pour que tu appréhendes mieux ton corps et ton esprit. On y
           utilise des sleds, des sacs de sebles et des haltères
         </p>
@@ -84,6 +95,7 @@
           Parce que chaque client est unique, avec sa propre histoire et sa propre expérience, Coach Vince s’est
           spécifiquement formé dans « l’assessment », l’évaluation corporelle
         </p>
+        <br />
         <p data-aos="fade">
           Il s’agit d’un bilan au cours duquel il prend en considération la personne qu’il rencontre dans sa GLOBALITÉ
           et tout ce qui peut influencer sur sa façon de bouger : son métier, son âge, sa condition physique, ses
@@ -91,8 +103,6 @@
           comment fonctionne ton corps, quels muscles tu utilises “ trop” ou “pas assez” et de quelle façon tu
           compenses.
         </p>
-        <br />
-        <br />
         <br />
         <p data-aos="fade">
           La finalité étant de trouver la source d’un potentiel déséquilibre, d’une douleur persistante, et de te
@@ -160,5 +170,12 @@ export default {
     filter: brightness(0.6);
     transition: filter 0.3s ease;
   }
+}
+h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+p {
+  margin: 0;
 }
 </style>

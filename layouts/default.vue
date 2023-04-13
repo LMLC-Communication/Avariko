@@ -86,7 +86,7 @@ article {
     font-weight: 400;
     /* or 22px */
 
-    text-transform: uppercase;
+    // text-transform: uppercase;
 
     span {
       color: hsla(183, 100%, 31%, 1);
