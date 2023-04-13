@@ -26,8 +26,12 @@
     </div>
     <main>
       <article id="philosophie">
-        <img src="@/assets/images/CROSSFIT_AVARIKO-107.jpg" alt="" />
-        <img src="@/assets/images/CROSSFIT_AVARIKO-016.jpg" alt="" />
+        <div class="gallery">
+          <img src="@/assets/images/CROSSFIT_AVARIKO-101.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-105.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-378.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-139.jpg" alt="" data-aos="fade-up" />
+        </div>
         <h2 data-aos="fade">Philosophie</h2>
         <p data-aos="fade">
           Avariko Athletics est une <span>salle unique en son genre</span>, qui mélange
@@ -41,8 +45,12 @@
         </p>
       </article>
       <article id="mission">
-        <img src="@/assets/images/CROSSFIT_AVARIKO-107.jpg" alt="" />
-        <img src="@/assets/images/CROSSFIT_AVARIKO-016.jpg" alt="" />
+        <div class="gallery">
+          <img src="@/assets/images/CROSSFIT_AVARIKO-458.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-593.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-862.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-903.jpg" alt="" data-aos="fade-up" />
+        </div>
         <h2 data-aos="fade">Notre Mission</h2>
         <p data-aos="fade">
           Vous aider à devenir la meilleure version de vous-même, <span>physiquement et mentalement</span>, en vous
@@ -63,8 +71,12 @@
         </p>
       </article>
       <article id="qui">
-        <img src="@/assets/images/CROSSFIT_AVARIKO-107.jpg" alt="" />
-        <img src="@/assets/images/CROSSFIT_AVARIKO-016.jpg" alt="" />
+        <div class="gallery">
+          <img src="@/assets/images/CROSSFIT_AVARIKO-039.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-129.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-351.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-1202.jpg" alt="" data-aos="fade-up" />
+        </div>
         <h2 data-aos="fade">Pour qui ?</h2>
         <p data-aos="fade">
           Peu importe ton <span>âge</span>, ton <span>expérience sportive</span>, ta <span>condition physique</span>,
@@ -77,8 +89,12 @@
         </p>
       </article>
       <article id="salle">
-        <img src="@/assets/images/CROSSFIT_AVARIKO-107.jpg" alt="" />
-        <img src="@/assets/images/CROSSFIT_AVARIKO-016.jpg" alt="" />
+        <div class="gallery">
+          <img src="@/assets/images/CROSSFIT_AVARIKO-235.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-059.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-378.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-020.jpg" alt="" data-aos="fade-up" />
+        </div>
         <h2 data-aos="fade">La salle</h2>
         <p data-aos="fade">
           Une superficie d’entrainement de <span>plus de 800m2</span>

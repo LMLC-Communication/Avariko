@@ -74,6 +74,7 @@ $navbar-height: 90px;
   text-decoration: none;
   display: flex;
   padding: 20px 0;
+  color: $primary;
   img {
     height: 50px;
     width: 90px;

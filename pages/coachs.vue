@@ -2,6 +2,7 @@
   <div>
     <div class="heros">
       <img src="@/assets/images/CROSSFIT_AVARIKO-421.jpg" alt="" />
+      <h1>Les coachs</h1>
     </div>
     <main>
       <article>

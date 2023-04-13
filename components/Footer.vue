@@ -1,5 +1,14 @@
 <template>
-  <footer>&copy;{{ new Date().getFullYear() }}</footer>
+  <footer>
+    <div class="foot">
+      <div></div>
+      <div>
+        &copy;{{ new Date().getFullYear() }}<br />
+        <a href="">mentions légales</a>
+      </div>
+      <div></div>
+    </div>
+  </footer>
 </template>
 
 <script>
@@ -11,6 +20,15 @@ footer {
   background-color: #000;
   color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
+}
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
 }
 </style>

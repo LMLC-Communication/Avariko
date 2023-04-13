@@ -3,15 +3,32 @@
     <!-- <h1>Notre Offre</h1> -->
     <div class="heros">
       <img src="@/assets/images/CROSSFIT_AVARIKO-020.jpg" alt="" />
+      <h1>Notre offre</h1>
     </div>
     <main>
       <article id="temoignage">
-        <h2>Témoignage</h2>
-        <p>XXXXXXX</p>
+        <div class="gallery">
+          <img src="@/assets/images/CROSSFIT_AVARIKO-168.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-206.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-209.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-433.jpg" alt="" data-aos="fade-up" />
+        </div>
+        <h2 data-aos="fade">Témoignage</h2>
+        <p data-aos="fade">
+          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores vero nobis dicta omnis nisi
+          optio unde facere, cupiditate repellat voluptatibus, reprehenderit minus repudiandae, quos quaerat aliquid
+          illum illo voluptas?”
+        </p>
       </article>
       <article id="seminaire">
-        <h2>Séminaires et stage</h2>
-        <p>
+        <div class="gallery">
+          <img src="@/assets/images/CROSSFIT_AVARIKO-453.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-599.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-785.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-867.jpg" alt="" data-aos="fade-up" />
+        </div>
+        <h2 data-aos="fade">Séminaires et stage</h2>
+        <p data-aos="fade">
           Nous proposons régulièrement des séminaires et stages sur différentes thématiques à nos clients
           (haltérophilie, stages vacances enfants etc).<br /><br /><br />
           Nous accompagnons également des clubs sportifs dans leurs préparation physique : rugby, judo etc…<br /><br /><br />
@@ -20,22 +37,28 @@
         </p>
       </article>
       <article id="programme">
-        <h2>Le programme</h2>
-        <p>
+        <div class="gallery">
+          <img src="@/assets/images/CROSSFIT_AVARIKO-947.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-882.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-1069.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-003.jpg" alt="" data-aos="fade-up" />
+        </div>
+        <h2 data-aos="fade">Le programme</h2>
+        <p data-aos="fade">
           Chez Avariko Athletics les programmes d’entraînement sont réfléchis, créés et testés EN INTERNE par les
           coachs.
         </p>
-        <p>
+        <p data-aos="fade">
           A l’image d’un chef qui s’inspire de plusieurs techniques et cultures, Vince sélectionne le meilleur de
           plusieurs disciplines (tels que le Cross training, StrongFit, l’Haltérophilie, la gymnastique) tout en
           s’appuyant sur sa propre expérience de sportif, de père de famille et sa culture internationale.
         </p>
-        <p>
+        <p data-aos="fade">
           Il a développé un programme pyramidale, permettant à TOUS d’acquérir les FONDATIONS, et ainsi de progresser et
           de performer sans se blesser!
         </p>
-        <p>→ REPOUSSE TES LIMITES 3X SEMAINES</p>
-        <p>
+        <p data-aos="fade">→ REPOUSSE TES LIMITES 3X SEMAINES</p>
+        <p data-aos="fade">
           #4 WOD + SPORT<br />
           Un vrai test de ton niveau de fitness qui va refléter ton travail au cours des niveaux ci-dessous et révéler
           tes points faibles<br />
@@ -50,12 +73,18 @@
         </p>
       </article>
       <article id="assessment">
-        <h2>L’ Assessment : l’évaluation corporelle</h2>
-        <p>
+        <div class="gallery">
+          <img src="@/assets/images/CROSSFIT_AVARIKO-053.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-101.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-206.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-351.jpg" alt="" data-aos="fade-up" />
+        </div>
+        <h2 data-aos="fade">L’ Assessment : l’évaluation corporelle</h2>
+        <p data-aos="fade">
           Parce que chaque client est unique, avec sa propre histoire et sa propre expérience, Coach Vince s’est
           spécifiquement formé dans « l’assessment », l’évaluation corporelle
         </p>
-        <p>
+        <p data-aos="fade">
           Il s’agit d’un bilan au cours duquel il prend en considération la personne qu’il rencontre dans sa GLOBALITÉ
           et tout ce qui peut influencer sur sa façon de bouger : son métier, son âge, sa condition physique, ses
           blessures mais aussi sa personnalité et son état psychologique. Tous ces facteurs lui serviront à comprendre
@@ -65,7 +94,7 @@
         <br />
         <br />
         <br />
-        <p>
+        <p data-aos="fade">
           La finalité étant de trouver la source d’un potentiel déséquilibre, d’une douleur persistante, et de te
           montrer comment bouger pour corriger les problèmes que tu rencontres et te sentir mieux dans ta vie, au
           quotidien.
@@ -79,7 +108,7 @@
 export default {
   methods: {
     initParallax() {
-      const heroImage = document.querySelector('.hero img');
+      const heroImage = document.querySelector('.heros img');
       if (heroImage) {
         const parallaxFactor = 0.3;
         const smoothingFactor = 0.3; // Augmenter cette valeur pour accélérer l'animation

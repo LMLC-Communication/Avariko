@@ -117,21 +117,22 @@ article {
     z-index: 1;
   }
   > img {
-    position: absolute;
-    height: 200px;
+    // position: absolute;
+    height: 300px;
     z-index: 0;
-    filter: brightness(0.8);
+    filter: brightness(0.6);
   }
-  > img:first-child {
-    left: 0;
-    top: 0;
-    transform: rotate(-7deg) translate(-50%, 50%);
-  }
-  > img:nth-child(2) {
-    right: 0;
-    bottom: 0;
-    transform: rotate(7deg) translate(50%, 50%);
-  }
+  // > img:first-child {
+  //   left: 0;
+  //   top: 0;
+  //   transform: translate(-50%, 0%);
+  // }
+  // > img:nth-child(2) {
+  //   display: none;
+  //   right: 0;
+  //   bottom: 0;
+  //   transform: translate(50%, 50%);
+  // }
 }
 
 .heros {
@@ -148,5 +149,25 @@ article {
     font-size: 70px;
     margin: auto;
   }
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+  }
+}
+
+nav > ul > li > a.router-link-exact-active {
+  color: $primary !important;
 }
 </style>
