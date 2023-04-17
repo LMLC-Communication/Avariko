@@ -6,34 +6,31 @@
       <h1>Notre offre</h1>
     </div>
     <main>
-      <article id="temoignage">
+      <article id="assessment">
         <div class="gallery">
-          <img src="@/assets/images/CROSSFIT_AVARIKO-168.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-053.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-101.jpg" alt="" data-aos="fade-up" />
           <img src="@/assets/images/CROSSFIT_AVARIKO-206.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-209.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-433.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-351.jpg" alt="" data-aos="fade-up" />
         </div>
-        <h2 data-aos="fade">Témoignage</h2>
+        <h2 data-aos="fade">L’ Assessment : l’évaluation corporelle</h2>
         <p data-aos="fade">
-          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores vero nobis dicta omnis nisi
-          optio unde facere, cupiditate repellat voluptatibus, reprehenderit minus repudiandae, quos quaerat aliquid
-          illum illo voluptas?”
+          Parce que chaque client est unique, avec sa propre histoire et sa propre expérience, Coach Vince s’est
+          spécifiquement formé dans « l’assessment », l’évaluation corporelle
         </p>
-      </article>
-      <article id="seminaire">
-        <div class="gallery">
-          <img src="@/assets/images/CROSSFIT_AVARIKO-453.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-599.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-785.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-867.jpg" alt="" data-aos="fade-up" />
-        </div>
-        <h2 data-aos="fade">Séminaires et stage</h2>
+        <br />
         <p data-aos="fade">
-          Nous proposons régulièrement des séminaires et stages sur différentes thématiques à nos clients
-          (haltérophilie, stages vacances enfants etc).<br /><br /><br />
-          Nous accompagnons également des clubs sportifs dans leurs préparation physique : rugby, judo etc…<br /><br /><br />
-          Enfin pour les professionnels sprotifs et coachs, nous pouvons vous accueillir si vous souhaitez organiser
-          votre séminaire ou formation chez nous !
+          Il s’agit d’un bilan au cours duquel il prend en considération la personne qu’il rencontre dans sa GLOBALITÉ
+          et tout ce qui peut influencer sur sa façon de bouger : son métier, son âge, sa condition physique, ses
+          blessures mais aussi sa personnalité et son état psychologique. Tous ces facteurs lui serviront à comprendre
+          comment fonctionne ton corps, quels muscles tu utilises “ trop” ou “pas assez” et de quelle façon tu
+          compenses.
+        </p>
+        <br />
+        <p data-aos="fade">
+          La finalité étant de trouver la source d’un potentiel déséquilibre, d’une douleur persistante, et de te
+          montrer comment bouger pour corriger les problèmes que tu rencontres et te sentir mieux dans ta vie, au
+          quotidien.
         </p>
       </article>
       <article id="programme">
@@ -83,31 +80,34 @@
           utilise des sleds, des sacs de sebles et des haltères
         </p>
       </article>
-      <article id="assessment">
+      <article id="temoignage">
         <div class="gallery">
-          <img src="@/assets/images/CROSSFIT_AVARIKO-053.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-101.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-168.jpg" alt="" data-aos="fade-up" />
           <img src="@/assets/images/CROSSFIT_AVARIKO-206.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-351.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-209.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-433.jpg" alt="" data-aos="fade-up" />
         </div>
-        <h2 data-aos="fade">L’ Assessment : l’évaluation corporelle</h2>
+        <h2 data-aos="fade">Témoignage</h2>
         <p data-aos="fade">
-          Parce que chaque client est unique, avec sa propre histoire et sa propre expérience, Coach Vince s’est
-          spécifiquement formé dans « l’assessment », l’évaluation corporelle
+          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores vero nobis dicta omnis nisi
+          optio unde facere, cupiditate repellat voluptatibus, reprehenderit minus repudiandae, quos quaerat aliquid
+          illum illo voluptas?”
         </p>
-        <br />
+      </article>
+      <article id="seminaire">
+        <div class="gallery">
+          <img src="@/assets/images/CROSSFIT_AVARIKO-453.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-599.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-785.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-867.jpg" alt="" data-aos="fade-up" />
+        </div>
+        <h2 data-aos="fade">Séminaires et stage</h2>
         <p data-aos="fade">
-          Il s’agit d’un bilan au cours duquel il prend en considération la personne qu’il rencontre dans sa GLOBALITÉ
-          et tout ce qui peut influencer sur sa façon de bouger : son métier, son âge, sa condition physique, ses
-          blessures mais aussi sa personnalité et son état psychologique. Tous ces facteurs lui serviront à comprendre
-          comment fonctionne ton corps, quels muscles tu utilises “ trop” ou “pas assez” et de quelle façon tu
-          compenses.
-        </p>
-        <br />
-        <p data-aos="fade">
-          La finalité étant de trouver la source d’un potentiel déséquilibre, d’une douleur persistante, et de te
-          montrer comment bouger pour corriger les problèmes que tu rencontres et te sentir mieux dans ta vie, au
-          quotidien.
+          Nous proposons régulièrement des séminaires et stages sur différentes thématiques à nos clients
+          (haltérophilie, stages vacances enfants etc).<br /><br /><br />
+          Nous accompagnons également des clubs sportifs dans leurs préparation physique : rugby, judo etc…<br /><br /><br />
+          Enfin pour les professionnels sprotifs et coachs, nous pouvons vous accueillir si vous souhaitez organiser
+          votre séminaire ou formation chez nous !
         </p>
       </article>
     </main>

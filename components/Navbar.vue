@@ -36,16 +36,16 @@
           <nuxt-link to="/offre">Notre offre</nuxt-link>
           <ul>
             <li>
-              <nuxt-link to="/offre#temoignage">Témoignage</nuxt-link>
-            </li>
-            <li>
-              <nuxt-link to="/offre#seminaire">Seminaire</nuxt-link>
+              <nuxt-link to="/offre#assessment">L’assessment : l’évaluation corporelle</nuxt-link>
             </li>
             <li>
               <nuxt-link to="/offre#programme">Le programme</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/offre#assessment">L’assessment : l’évaluation corporelle</nuxt-link>
+              <nuxt-link to="/offre#temoignage">Témoignage</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/offre#seminaire">Seminaire</nuxt-link>
             </li>
           </ul>
         </li>
@@ -74,7 +74,7 @@ $navbar-height: 90px;
   text-decoration: none;
   display: flex;
   padding: 20px 0;
-  color: $primary;
+  // color: $primary;
   img {
     height: 50px;
     width: 90px;

@@ -1,29 +1,55 @@
 <template>
   <div>
     <div class="heros">
-      <img src="@/assets/images/CROSSFIT_AVARIKO-421.jpg" alt="" />
+      <img src="@/assets/images/CROSSFIT_AVARIKO-421_bis.jpg" alt="" />
       <h1>Les coachs</h1>
     </div>
     <main>
       <article>
-        <h2 data-aos="fade">Présentation des coachs</h2>
         <h3 data-aos="fade">Coach Vince #ohfuck</h3>
         <img id="coachImage" src="@/assets/images/CROSSFIT_AVARIKO-666.jpg" alt="" />
         <ul data-aos="fade">
-          <li>Arrivé tout droit du Canada, derrière la communauté AVARIKO Athletics, il y a Coach Vince !</li>
-          <li>Un coach solide, à la personnalité atypique que tu vas aimer autant que détester ;)</li>
           <li>
-            Joueurs de rugby, il pratique dans sa jeunesse le Hockey sur Glace (of course) et la crosse (sport n°2 au
-            Canada).
+            Arrivé tout droit du <span>Canada</span>, derrière la communauté AVARIKO Athletics, il y a Coach Vince !
           </li>
-          <li>Titulaire d’un PBJEPPS AGFF, CrossFit level 1 et 2,</li>
           <li>
-            Près de 10 ans d’expérience dans la coaching (tout âge et toute condition) il se forme régulièrement pour
-            toujours approfondir ses connaissances. Un bon coach a lui-même un coach!
+            Un coach <span>solide</span>, à la <span>personnalité atypique</span> que tu vas aimer autant que détester
+            ;)
+          </li>
+          <li>
+            <span>Joueurs de rugby</span>, il pratique dans sa jeunesse le Hockey sur Glace (of course) et la crosse
+            (sport n°2 au Canada).
+          </li>
+          <li><span>Titulaire d’un PBJEPPS AGFF</span>, CrossFit level 1 et 2,</li>
+          <li>
+            Près de <span>10 ans d’expérience</span> dans la coaching (tout âge et toute condition) il se forme
+            régulièrement pour toujours approfondir ses connaissances. Un bon coach a lui-même un coach!
           </li>
         </ul>
         <p data-aos="fade">Sa particularité : Il maitrise à la perfection le Franglais<br /></p>
+      </article>
+      <article>
         <h3 data-aos="fade">Coach Aurélien</h3>
+        <img id="coachAurelien" src="@/assets/images/coach_aurelien.jpg" alt="" />
+        <ul data-aos="fade">
+          <li>
+            Arrivé tout droit du <span>Canada</span>, derrière la communauté AVARIKO Athletics, il y a Coach Vince !
+          </li>
+          <li>
+            Un coach <span>solide</span>, à la <span>personnalité atypique</span> que tu vas aimer autant que détester
+            ;)
+          </li>
+          <li>
+            <span>Joueurs de rugby</span>, il pratique dans sa jeunesse le Hockey sur Glace (of course) et la crosse
+            (sport n°2 au Canada).
+          </li>
+          <li><span>Titulaire d’un PBJEPPS AGFF</span>, CrossFit level 1 et 2,</li>
+          <li>
+            Près de <span>10 ans d’expérience</span> dans la coaching (tout âge et toute condition) il se forme
+            régulièrement pour toujours approfondir ses connaissances. Un bon coach a lui-même un coach!
+          </li>
+        </ul>
+        <p data-aos="fade">Sa particularité : Il maitrise à la perfection le Franglais<br /></p>
       </article>
     </main>
   </div>
@@ -32,10 +58,10 @@
 <script>
 export default {
   methods: {
-    initAnimation() {
-      const cursor = document.querySelector('#coachImage');
+    initAnimation(selector) {
+      const cursor = document.querySelector(selector);
       if (cursor) {
-        const moveFactor = 0.05;
+        const moveFactor = 0.08;
 
         let initialX = cursor.offsetLeft;
         let initialY = cursor.offsetTop;
@@ -46,13 +72,15 @@ export default {
 
         cursor.addEventListener('mouseover', () => {
           cursor.style.zIndex = '2';
-          cursor.style.transform = 'translate(-50%, -50%) rotate(0deg) scale(1.1)';
+          // cursor.style.transform = 'translate(-50%, -50%) rotate(0deg) scale(1.1)';
+          cursor.style.transform = 'translate(-50%, -50%) scale(1.1)';
           cursor.style.filter = 'brightness(1)';
         });
 
         cursor.addEventListener('mouseout', () => {
           cursor.style.zIndex = '0';
-          cursor.style.transform = 'translate(-50%, -50%) rotate(5deg) scale(1)';
+          // cursor.style.transform = 'translate(-50%, -50%) rotate(5deg) scale(1)';
+          cursor.style.transform = 'translate(-50%, -50%) scale(1)';
           cursor.style.filter = 'brightness(0.6)';
         });
 
@@ -74,7 +102,7 @@ export default {
         requestAnimationFrame(updatePosition);
       } else {
         setTimeout(() => {
-          this.initAnimation();
+          this.initAnimation(selector);
         }, 200);
       }
     },
@@ -109,7 +137,8 @@ export default {
   mounted() {
     this.$nextTick(() => {
       setTimeout(() => {
-        this.initAnimation();
+        this.initAnimation('#coachImage');
+        this.initAnimation('#coachAurelien');
         this.initParallax();
       }, 500);
     });
@@ -132,12 +161,19 @@ article {
     position: absolute;
     top: 70%;
     left: 60%;
-    transform: translate(-50%, -50%) rotate(5deg);
+    // transform: translate(-50%, -50%) rotate(5deg);
+    transform: translate(-50%, -50%);
     z-index: 0;
-    height: 50%;
+    height: 300px;
     object-fit: cover;
     filter: brightness(0.6);
     transition: transform 0.3s ease, filter 0.3s ease;
   }
 }
+
+// article:nth-child(2) {
+//   img {
+//     left: 30%;
+//   }
+// }
 </style>
