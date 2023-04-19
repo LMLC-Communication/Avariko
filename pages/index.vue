@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="hero">
-      <video src="@/assets/videos/intro.mp4" autoplay loop muted></video>
+      <video src="@/assets/videos/intro.mp4" autoplay loop muted playsinline="true" />
       <div class="hero__content">
         <h4 class="hero__content__subtitle">DÉPASSEZ VOS LIMITES</h4>
         <h1 class="hero__content__title">
