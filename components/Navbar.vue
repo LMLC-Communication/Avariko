@@ -122,6 +122,7 @@ nav {
   align-items: center;
   padding: 0 20px;
   background-color: black;
+  max-width: 100vw;
   a {
     animation: fade 2s;
   }
@@ -219,6 +220,7 @@ nav {
   nav {
     justify-content: space-between;
     > ul.menu {
+      padding: 0;
       position: fixed;
       top: 0;
       left: 0;
@@ -227,7 +229,7 @@ nav {
       height: 100vh;
       width: 100vw;
       background-color: black;
-      z-index: 100;
+      z-index: 100000000;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -237,7 +239,9 @@ nav {
       margin: 0;
       font-weight: bold;
       > li {
+        padding: 0;
         margin-top: 10px;
+        margin-right: 0;
         > a {
           font-size: 20px;
         }

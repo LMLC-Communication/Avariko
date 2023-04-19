@@ -105,7 +105,9 @@ article {
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    object-position: left;
     filter: brightness(0.6);
     transition: filter 0.3s ease;
   }

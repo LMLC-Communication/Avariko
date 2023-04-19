@@ -61,7 +61,7 @@ export default {
     initAnimation(selector) {
       const cursor = document.querySelector(selector);
       if (cursor) {
-        const moveFactor = 0.07;
+        const moveFactor = 0.06;
 
         let initialX = cursor.offsetLeft;
         let initialY = cursor.offsetTop;
@@ -149,7 +149,7 @@ export default {
 <style lang="scss" scoped>
 article {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   h2,
   h3,
   ul,
@@ -165,7 +165,7 @@ article {
     // transform: translate(-50%, -50%) rotate(5deg);
     transform: translate(-50%, -50%);
     z-index: 0;
-    height: 300px;
+    height: 200px;
     object-fit: cover;
     filter: brightness(0.6);
     transition: transform 0.3s ease, filter 0.3s ease;
