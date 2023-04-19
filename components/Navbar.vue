@@ -11,7 +11,7 @@
           ATHLETICS
         </span>
       </nuxt-link>
-      <ul v-if="menuOpen || innerWidth > 1000" class="menu" @click="toggleMenu">
+      <ul v-if="menuOpen || innerWidth > 768" class="menu" @click="toggleMenu">
         <li>
           <nuxt-link to="/">Qui Sommes Nous</nuxt-link>
           <ul>
@@ -83,7 +83,7 @@ export default {
     this.innerWidth = window.innerWidth;
     window.addEventListener('resize', () => {
       this.innerWidth = window.innerWidth;
-      if (this.innerWidth > 1000) {
+      if (this.innerWidth > 768) {
         this.menuOpen = false;
       }
     });
