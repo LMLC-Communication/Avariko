@@ -212,11 +212,11 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
-  .menu_title {
-    span {
-      display: none;
-    }
-  }
+  // .menu_title {
+  //   span {
+  //     font-size: 20px;
+  //   }
+  // }
   nav {
     justify-content: space-between;
     > ul.menu {
@@ -260,6 +260,9 @@ nav {
         }
       }
     }
+  }
+  ul ul {
+    display: none !important;
   }
   .burger {
     display: block;

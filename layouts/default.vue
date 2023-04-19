@@ -180,7 +180,7 @@ nav > ul > li > a.router-link-exact-active {
   }
   .hero {
     h1 {
-      font-size: 30px;
+      font-size: 50px;
     }
   }
 }
