@@ -61,7 +61,7 @@ export default {
     initAnimation(selector) {
       const cursor = document.querySelector(selector);
       if (cursor) {
-        const moveFactor = 0.08;
+        const moveFactor = 0.07;
 
         let initialX = cursor.offsetLeft;
         let initialY = cursor.offsetTop;

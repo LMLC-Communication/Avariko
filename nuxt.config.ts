@@ -25,7 +25,10 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'vercel-edge',
   },
-  css: ['~/assets/fonts/blender-pro/stylesheet.css'],
+  css: [
+    '~/assets/fonts/blender-pro/stylesheet.css',
+    'leaflet/dist/leaflet.css', // Ajoutez cette ligne
+  ],
   plugins: [
     { src: '@/plugins/aos', ssr: false, mode: 'client' },
     // '@/plugins/three.js'

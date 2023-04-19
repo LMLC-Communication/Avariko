@@ -19,21 +19,18 @@
           Le lieu :
           <a href="https://goo.gl/maps/WzYHvTTQjLxEapch8" target="_blank">238 AVENUE DE SAINT AMAND 18570 TROUY NORD</a>
         </p>
-        <iframe
-          data-aos="zoom-in"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2718.2662281134044!2d2.38386471561143!3d47.05462767915191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47fa94219b46cf8d%3A0x20a77c98c948726b!2sAvariko%20Athletics!5e0!3m2!1sfr!2sfr!4v1681315279847!5m2!1sfr!2sfr"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        <OSMMap />
       </article>
     </main>
   </div>
 </template>
 
 <script>
+// import OSMMap from '~/components/OSMMap.vue';
 export default {
+  // components: {
+  //   OSMMap,
+  // },
   methods: {
     initParallax() {
       const heroImage = document.querySelector('.heros img');

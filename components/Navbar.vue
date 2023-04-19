@@ -54,6 +54,11 @@
         </li>
         <li>
           <nuxt-link to="/contact">Contactez nous</nuxt-link>
+          <ul>
+            <li>
+              <nuxt-link to="/map">L’assessment : l’évaluation corporelle</nuxt-link>
+            </li>
+          </ul>
         </li>
       </ul>
     </nav>
