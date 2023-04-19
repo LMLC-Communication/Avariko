@@ -11,7 +11,7 @@
           ATHLETICS
         </span>
       </nuxt-link>
-      <ul>
+      <ul v-if="menuOpen || innerWidth > 1000" class="menu" @click="toggleMenu">
         <li>
           <nuxt-link to="/">Qui Sommes Nous</nuxt-link>
           <ul>
@@ -54,13 +54,13 @@
         </li>
         <li>
           <nuxt-link to="/contact">Contactez nous</nuxt-link>
-          <ul>
-            <li>
-              <nuxt-link to="/map">L’assessment : l’évaluation corporelle</nuxt-link>
-            </li>
-          </ul>
         </li>
       </ul>
+      <div class="burger" @click="toggleMenu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
     </nav>
   </header>
 </template>
@@ -68,6 +68,26 @@
 <script>
 export default {
   name: 'Navbar',
+  data() {
+    return {
+      menuOpen: false,
+      innerWidth: 0,
+    };
+  },
+  methods: {
+    toggleMenu() {
+      this.menuOpen = !this.menuOpen;
+    },
+  },
+  mounted() {
+    this.innerWidth = window.innerWidth;
+    window.addEventListener('resize', () => {
+      this.innerWidth = window.innerWidth;
+      if (this.innerWidth > 1000) {
+        this.menuOpen = false;
+      }
+    });
+  },
 };
 </script>
 
@@ -175,6 +195,70 @@ nav {
         }
       }
     }
+  }
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .menu_title {
+    span {
+      display: none;
+    }
+  }
+  nav {
+    justify-content: space-between;
+    > ul.menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100vh;
+      width: 100vw;
+      background-color: black;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+      margin: 0;
+      font-weight: bold;
+      > li {
+        margin-top: 10px;
+        > a {
+          font-size: 20px;
+        }
+        ul {
+          padding: 0;
+          margin: 0 auto;
+          position: static;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 0;
+          opacity: 1;
+          text-align: center;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+  .burger {
+    display: block;
   }
 }
 

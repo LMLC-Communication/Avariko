@@ -8,7 +8,7 @@
       <article>
         <h2 data-aos="fade">CONTACT</h2>
 
-        <p data-aos="fade">
+        <!-- <p data-aos="fade">
           Nous contacter par téléphone : <a href="tel:+33699323213">0699323213</a><br />
           <br />
           <a href="https://www.instagram.com/avariko_athletics/"
@@ -18,7 +18,7 @@
           <br />
           Le lieu :
           <a href="https://goo.gl/maps/WzYHvTTQjLxEapch8" target="_blank">238 AVENUE DE SAINT AMAND 18570 TROUY NORD</a>
-        </p>
+        </p> -->
         <OSMMap />
       </article>
     </main>

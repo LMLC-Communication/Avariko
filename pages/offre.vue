@@ -41,47 +41,54 @@
           <img src="@/assets/images/CROSSFIT_AVARIKO-003.jpg" alt="" data-aos="fade-up" />
         </div>
 
-        <img src="@/assets/images/pyramid.svg" alt="" class="pyramid" />
-        <div>
-          <h2 data-aos="fade">Le programme</h2>
-          <p data-aos="fade">
-            Chez Avariko Athletics les programmes d’entraînement sont <span>réfléchis, créés et testés</span> EN INTERNE
-            par les coachs.
-          </p>
-          <br />
-          <p data-aos="fade">
-            A l’image d’un chef qui s’inspire de plusieurs techniques et cultures, Vince sélectionne le meilleur de
-            plusieurs disciplines (tels que le Cross training, StrongFit, l’Haltérophilie, la gymnastique) tout en
-            s’appuyant sur sa propre expérience de sportif, de père de famille et sa culture internationale.
-          </p>
-          <br />
-          <p data-aos="fade">
-            Il a développé un programme pyramidale, permettant à TOUS d’acquérir les FONDATIONS, et ainsi de
-            <span>progresser et de performer</span> sans se blesser!
-          </p>
-          <p data-aos="fade">→ REPOUSSE TES LIMITES 3X SEMAINES</p>
-          <br />
-          <br />
-          <h4 data-aos="fade">#4 WOD + SPORT</h4>
-          <p data-aos="fade">
-            Un vrai <span>test</span> de ton niveau de fitness qui va refléter ton travail au cours des niveaux
-            ci-dessous et révéler tes points faibles
-          </p>
-          <br />
-          <h4 data-aos="fade">#3 W101/GYM : la technique</h4>
-          <p data-aos="fade">
-            W101 : des cours d’haltérophilie spécifique : sntach, clean & jerk <br />
-            GYM : des mouvements et exercices avec le poids du corps, pour améliorer tes compétences en gymnastique
-          </p>
-          <br />
-          <h4 data-aos="fade">#2 SWEAT : brûle moi ces f***ing calories !</h4>
-          <p data-aos="fade">Travaille ton cardio avec 3 machines : row, ski et velo</p>
-          <br />
-          <h4 data-aos="fade">#1 CLAM : la base</h4>
-          <p data-aos="fade">
-            La fondation de notre gym, un programme constriut pour que tu appréhendes mieux ton corps et ton esprit. On
-            y utilise des sleds, des sacs de sebles et des haltères
-          </p>
+        <h2 data-aos="fade">Le programme</h2>
+        <p data-aos="fade">
+          Chez Avariko Athletics les programmes d’entraînement sont <span>réfléchis, créés et testés</span> EN INTERNE
+          par les coachs.
+        </p>
+        <br />
+        <p data-aos="fade">
+          A l’image d’un chef qui s’inspire de plusieurs techniques et cultures, Vince sélectionne le meilleur de
+          plusieurs disciplines (tels que le Cross training, StrongFit, l’Haltérophilie, la gymnastique) tout en
+          s’appuyant sur sa propre expérience de sportif, de père de famille et sa culture internationale.
+        </p>
+        <br />
+        <p data-aos="fade">
+          Il a développé un programme pyramidale, permettant à TOUS d’acquérir les FONDATIONS, et ainsi de
+          <span>progresser et de performer</span> sans se blesser!
+        </p>
+        <p data-aos="fade">→ REPOUSSE TES LIMITES 3X SEMAINES</p>
+        <br />
+        <br />
+        <div class="programme">
+          <img data-aos="flip-up" src="@/assets/images/pyramid.svg" alt="" class="pyramid" />
+          <div class="programme_liste">
+            <div>
+              <h4 data-aos="fade">#4 WOD + SPORT</h4>
+              <p data-aos="fade">
+                Un vrai <span>test</span> de ton niveau de fitness qui va refléter ton travail au cours des niveaux
+                ci-dessous et révéler tes points faibles
+              </p>
+            </div>
+            <div>
+              <h4 data-aos="fade">#3 W101/GYM : la technique</h4>
+              <p data-aos="fade">
+                W101 : des cours d’haltérophilie spécifique : sntach, clean & jerk <br />
+                GYM : des mouvements et exercices avec le poids du corps, pour améliorer tes compétences en gymnastique
+              </p>
+            </div>
+            <div>
+              <h4 data-aos="fade">#2 SWEAT : brûle moi ces f***ing calories !</h4>
+              <p data-aos="fade">Travaille ton cardio avec 3 machines : row, ski et velo</p>
+            </div>
+            <div>
+              <h4 data-aos="fade">#1 CLAM : la base</h4>
+              <p data-aos="fade">
+                La fondation de notre gym, un programme constriut pour que tu appréhendes mieux ton corps et ton esprit.
+                On y utilise des sleds, des sacs de sebles et des haltères
+              </p>
+            </div>
+          </div>
         </div>
       </article>
       <article id="temoignage">
@@ -183,8 +190,32 @@ p {
   margin: 0;
 }
 
-.pyramid {
-  display: block;
-  filter: brightness(1);
+.programme {
+  display: flex;
+  gap: 20px;
+  .pyramid {
+    display: block;
+    filter: brightness(1);
+    height: 400px;
+  }
+  .programme_liste {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .programme {
+    flex-direction: column;
+    .pyramid {
+      width: 100%;
+      height: 300px;
+    }
+    .programme_liste {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+  }
 }
 </style>

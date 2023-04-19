@@ -14,8 +14,8 @@
       </div>
     </div>
     <div class="quotation">
-      <ThreeScene />
-      <ThreeSceneMirror class="mirror" />
+      <!-- <ThreeScene />
+      <ThreeSceneMirror class="mirror" /> -->
       <h3 data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
         Transformez votre corps,<br />dépassez vos limites,<br />atteignez vos objectifs
       </h3>
@@ -302,5 +302,29 @@ h4 {
 
 .mirror {
   transform: translate(-540px);
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    .hero__content {
+      padding: 120px 50px 0 50px;
+    }
+  }
+  h1 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 30px;
+    width: 100%;
+  }
+  h4 {
+    font-size: 18px;
+  }
+  .quotation {
+    padding: 40px;
+  }
+  .mirror {
+    transform: translate(-300px);
+  }
 }
 </style>

@@ -215,4 +215,32 @@ article {
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  article {
+    h2 {
+      font-size: 40px;
+    }
+    h4 {
+      font-size: 20px;
+    }
+    h5 {
+      font-size: 12px;
+    }
+    .card {
+      p {
+        font-size: 14px;
+        span {
+          font-size: 60px;
+        }
+      }
+    }
+    > p {
+      font-size: 14px;
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}
 </style>

@@ -149,6 +149,7 @@ export default {
 <style lang="scss" scoped>
 article {
   position: relative;
+  margin-bottom: 50px;
   h2,
   h3,
   ul,
@@ -168,6 +169,21 @@ article {
     object-fit: cover;
     filter: brightness(0.6);
     transition: transform 0.3s ease, filter 0.3s ease;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  article {
+    img {
+      height: auto;
+      width: 100vw;
+      aspect-ratio: 1 / 1;
+      position: relative;
+      top: 0 !important;
+      left: -20px !important;
+      transform: translate(0, 0) !important;
+      filter: brightness(1) !important;
+    }
   }
 }
 

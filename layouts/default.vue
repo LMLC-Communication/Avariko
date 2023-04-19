@@ -113,6 +113,7 @@ article {
 
 article {
   position: relative;
+  padding: 0 20px;
   p {
     z-index: 1;
   }
@@ -169,5 +170,16 @@ article {
 
 nav > ul > li > a.router-link-exact-active {
   color: $primary !important;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .hero {
+    h1 {
+      font-size: 30px;
+    }
+  }
 }
 </style>
