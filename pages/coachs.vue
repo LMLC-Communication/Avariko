@@ -185,6 +185,9 @@ article {
       filter: brightness(1) !important;
     }
   }
+  main {
+    overflow: hidden;
+  }
 }
 
 // article:nth-child(2) {
