@@ -2,7 +2,7 @@
   <header>
     <nav>
       <!-- <nuxt-link to="/">
-        <img src="~/assets/images/logo_$light-gray.svg" alt="Nuxt Logo" />
+        <img src="~/assets/images/logo_$white.svg" alt="Nuxt Logo" />
       </nuxt-link> -->
       <nuxt-link to="/" class="menu_title">
         <img src="@/assets/images/logo.svg" alt="Nuxt Logo" class="logo" />
@@ -93,10 +93,12 @@ export default {
 
 <style lang="scss" scoped>
 $navbar-height: 90px;
-$light-gray: #fff;
+$white: #fff;
+$black: #000;
+
 .menu_title {
   font-size: 20px;
-  color: black;
+  color: $white;
   text-decoration: none;
   display: flex;
   padding: 20px 0;
@@ -122,7 +124,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  background-color: $light-gray;
+  background-color: $black;
   max-width: 100vw;
   a {
     animation: fade 2s;
@@ -143,7 +145,7 @@ nav {
     > li {
       margin-right: 30px;
       > a {
-        color: black;
+        color: $white;
         text-decoration: none;
         font-size: 16px;
         &:hover {
@@ -161,7 +163,7 @@ nav {
         pointer-events: none;
         opacity: 0;
         list-style: none;
-        background-color: $light-gray;
+        background-color: $black;
         transition: opacity 0.2s ease;
         display: flex;
         flex-direction: column;
@@ -175,11 +177,11 @@ nav {
           }
           > a {
             padding: 8px 20px;
-            color: black;
+            color: $white;
             display: block;
             text-decoration: none;
             &:hover {
-              color: black;
+              color: $white;
             }
           }
         }
@@ -206,7 +208,7 @@ nav {
   div {
     width: 30px;
     height: 3px;
-    background-color: $light-gray;
+    background-color: $black;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -229,7 +231,7 @@ nav {
       bottom: 0;
       height: 100vh;
       width: 100vw;
-      background-color: black;
+      background-color: $white;
       z-index: 100000000;
       display: flex;
       flex-direction: column;

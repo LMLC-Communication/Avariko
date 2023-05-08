@@ -26,7 +26,7 @@
       </h4>
       <button data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">EN SAVOIR PLUS</button>
     </div>
-    <main>
+    <main class="home">
       <article id="philosophie">
         <div class="gallery">
           <img src="@/assets/images/CROSSFIT_AVARIKO-101.jpg" alt="" data-aos="fade-up" />

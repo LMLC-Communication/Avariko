@@ -43,7 +43,7 @@ h2 {
   padding-top: $navbar-height;
 }
 
-main {
+main.home {
   background: url('/bg.png');
   background-size: cover;
   padding: 50px 0;
