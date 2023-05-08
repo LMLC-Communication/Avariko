@@ -96,3 +96,6 @@ sw.*
 
 # API
 api
+
+# server 
+.htaccess

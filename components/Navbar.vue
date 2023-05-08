@@ -13,7 +13,7 @@
       </nuxt-link>
       <ul v-if="menuOpen || innerWidth > 768" class="menu" @click="toggleMenu">
         <li>
-          <nuxt-link to="/">Qui Sommes Nous</nuxt-link>
+          <nuxt-link to="/">Qui sommes-nous</nuxt-link>
           <ul>
             <li>
               <nuxt-link to="/#philosophie">Philosophie</nuxt-link>
@@ -22,7 +22,7 @@
               <nuxt-link to="/#mission">Notre mission</nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/#qui">Pour qui?</nuxt-link>
+              <nuxt-link to="/#qui">Pour qui ?</nuxt-link>
             </li>
             <li>
               <nuxt-link to="/#salle">La salle</nuxt-link>
@@ -53,7 +53,7 @@
           <nuxt-link to="/horaires-et-tarifs">Horaires et tarifs</nuxt-link>
         </li>
         <li>
-          <nuxt-link to="/contact">Contactez nous</nuxt-link>
+          <nuxt-link to="/contact">Contactez-nous</nuxt-link>
         </li>
       </ul>
       <div class="burger" @click="toggleMenu">
@@ -208,7 +208,7 @@ nav {
   div {
     width: 30px;
     height: 3px;
-    background-color: $black;
+    background-color: $white;
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -231,7 +231,7 @@ nav {
       bottom: 0;
       height: 100vh;
       width: 100vw;
-      background-color: $white;
+      background-color: $black;
       z-index: 100000000;
       display: flex;
       flex-direction: column;

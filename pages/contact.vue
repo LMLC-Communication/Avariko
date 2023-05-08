@@ -11,46 +11,44 @@
         <p data-aos="fade">
           Nous contacter par téléphone : <a href="tel:+33699323213">0699323213</a><br />
           <br />
-          <a href="https://www.instagram.com/avariko_athletics/"
-            ><img src="../assets/images/instagram.svg" alt="" /> @AVARIKO_ATHLETICS</a
-          >
+          <a href="https://www.instagram.com/avariko_athletics/"><img src="../assets/images/instagram.svg" alt="" /> @AVARIKO_ATHLETICS</a>
         </p>
-        <OSMMap />
-
-        <!-- <iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
-        <form
-          action="https://avariko-athletics.lmlccommunication.fr/api/send_email.php"
-          method="POST"
-          data-aos="fade"
-          target="dummyframe"
-          @submit="submitForm"
-        >
+        <iframe ref="dummyframe" name="dummyframe" style="display: none"></iframe>
+        <h2>Contactez-nous</h2>
+        <form v-if="!sended" action="/api/send_email.php" method="POST" data-aos="fade" target="dummyframe" @submit="submitForm">
           <label for="nom">Nom / Prénom:</label>
-          <input type="text" name="nom" id="nom" v-model="formData.nom" required />
+          <input type="text" name="nom" id="nom" v-model="formData.nom" required autocomplete="name" aria-autocomplete="list" />
           <br />
           <label for="telephone">Numéro de téléphone:</label>
-          <input type="text" name="telephone" id="telephone" v-model="formData.telephone" required />
+          <input type="text" name="telephone" id="telephone" v-model="formData.telephone" required autocomplete="tel" aria-autocomplete="list" />
           <br />
           <label for="email">Email:</label>
-          <input type="email" name="email" id="email" v-model="formData.email" required />
+          <input type="email" name="email" id="email" v-model="formData.email" required autocomplete="email" aria-autocomplete="list" />
           <br />
           <label for="antecedents">Antécédents, blessures, maladies, parcours sportifs, etc.:</label>
-          <textarea name="antecedents" id="antecedents" rows="4" v-model="formData.antecedents" required></textarea>
+          <textarea name="antecedents" id="antecedents" rows="4" v-model="formData.antecedents" required autocomplete="off"></textarea>
           <br />
           <label for="objectifs">Objectifs recherchés:</label>
-          <textarea name="objectifs" id="objectifs" rows="4" v-model="formData.objectifs" required></textarea>
+          <textarea name="objectifs" id="objectifs" rows="4" v-model="formData.objectifs" required autocomplete="off"></textarea>
           <br />
           <input type="hidden" name="recaptcha_response" id="recaptchaResponse" v-model="formData.recaptchaResponse" />
           <input type="submit" value="Envoyer" />
-        </form> -->
+        </form>
+        <form v-else>
+          <p>Merci pour votre message !</p>
+          <p>Nous vous répondrons dans les plus brefs délais.</p>
+          <p>A très bientôt !</p>
+          <!-- Envoyer un nouveau message -->
+          <input type="submit" value="Envoyer un nouveau message" @click="sended = false" />
+        </form>
+        <!-- Load after 1s -->
+        <OSMMap />
       </article>
     </main>
   </div>
 </template>
 
 <script>
-import axios from 'axios';
-
 export default {
   data() {
     return {
@@ -62,6 +60,7 @@ export default {
         objectifs: '',
         recaptchaResponse: '',
       },
+      sended: false,
     };
   },
   mounted() {
@@ -73,8 +72,15 @@ export default {
     });
   },
   methods: {
-    async submitForm() {
-      this.resetForm();
+    submitForm() {
+      this.$refs.dummyframe.addEventListener(
+        'load',
+        () => {
+          this.sended = true;
+          this.resetForm();
+        },
+        { once: true },
+      );
     },
     resetForm() {
       this.formData.nom = '';
@@ -83,6 +89,8 @@ export default {
       this.formData.antecedents = '';
       this.formData.objectifs = '';
       this.formData.recaptchaResponse = '';
+      // disable submit button
+      // document.querySelector('input[type="submit"]').disabled = true;
     },
     initRecaptcha() {
       const script = document.createElement('script');
@@ -175,24 +183,36 @@ form {
   flex-direction: column;
   gap: 0px;
   padding: 20px;
-  margin: 50px 0;
+  margin: 0 0 50px 0;
   border-radius: 5px;
-  background-color: white;
+  border: 1px solid #ccc;
+  background-color: black;
 
   label {
     font-weight: bold;
     margin-bottom: 10px;
-    color: #333;
+    color: #fff;
   }
   input,
   textarea {
+    color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 20px;
+    background-color: black;
     transition: border-color 0.3s ease;
     &:focus {
+      outline: $primary solid 2px;
       border-color: $primary;
+    }
+    // autocomplete styles display in $primary background and black text
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: white;
+      -webkit-box-shadow: 0 0 0px 1000px $primary inset;
+      transition: background-color 5000s ease-in-out 0s;
     }
   }
   input[type='submit'] {
@@ -202,10 +222,17 @@ form {
     padding: 10px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    &:hover {
+    &:not(:disabled):hover {
+      cursor: pointer;
       opacity: 0.8;
     }
   }
+}
+
+h2 {
+  margin-bottom: 0px;
+  color: #fff;
+  transform: translateY(-25%);
 }
 
 @media screen and (max-width: 768px) {

@@ -7,6 +7,7 @@
 </template>
 
 <style lang="scss">
+@use 'sass:color';
 $navbar-height: 90px;
 
 html {
@@ -162,7 +163,9 @@ article {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-
+  &:first-child {
+    margin-top: 50px;
+  }
   img {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -172,6 +175,34 @@ article {
 
 nav > ul > li > a.router-link-exact-active {
   color: $primary !important;
+}
+
+.quotation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid $primary;
+    color: white;
+    font-size: 14px;
+    padding: 20px 34px;
+    margin-top: 34px;
+    border-radius: 200px;
+    transition: border-color 0.1s ease, background-color 0.1s ease;
+    animation: fade 2s;
+    transition: background-color 0.1s;
+    &:hover {
+      border-color: transparent;
+      background-color: color.adjust($primary, $alpha: -0.5);
+
+      backdrop-filter: blur(20px);
+      // blur background only
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

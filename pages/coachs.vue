@@ -33,16 +33,16 @@
         <img id="coachAurelien" src="@/assets/images/coach_aurelien.jpg" alt="" />
         <ul data-aos="fade">
           <li>
-            Après avoir travaillé <span>6 ans dans le sport automobile</span>, Coach Aurélien à choisi de se reconvertir et de
-            rejoindre Avariko Athletics en tant que coach.
+            Après avoir travaillé <span>6 ans dans le sport automobile</span>, Coach Aurélien à choisi de se reconvertir
+            et de rejoindre Avariko Athletics en tant que coach.
           </li>
           <li><span>Rigoureux</span>, <span>perfectionniste</span> et toujours de <span>bonne humeur</span> !</li>
           <li>
             Il a pratiqué de nombreux sports les principaux : Le basketball, l'athlétisme ainsi que le Trail running.
           </li>
           <li>
-            Titulaire d'un <span>BPJEPS Haltérophilie & Musculation</span>, de brevets d'État d'haltérophilie, de force athlétique et
-            functional training. Crossfit Gymnastique
+            Titulaire d'un <span>BPJEPS Haltérophilie & Musculation</span>, de brevets d'État d'haltérophilie, de force
+            athlétique et functional training. Crossfit Gymnastique
           </li>
           <li>
             Arrivé en 2021 à Avariko Athletics en tant que coach, il met tout en œuvre pour apprendre davantage et
@@ -74,14 +74,12 @@ export default {
 
         cursor.addEventListener('mouseover', () => {
           cursor.style.zIndex = '2';
-          // cursor.style.transform = 'translate(-50%, -50%) rotate(0deg) scale(1.1)';
           cursor.style.transform = 'translate(-50%, -50%) scale(1.1)';
           cursor.style.filter = 'brightness(1)';
         });
 
         cursor.addEventListener('mouseout', () => {
           cursor.style.zIndex = '0';
-          // cursor.style.transform = 'translate(-50%, -50%) rotate(5deg) scale(1)';
           cursor.style.transform = 'translate(-50%, -50%) scale(1)';
           cursor.style.filter = 'brightness(0.6)';
         });
@@ -94,13 +92,35 @@ export default {
           requestAnimationFrame(updatePosition);
         };
 
-        document.addEventListener('mousemove', e => {
-          const offsetX = (e.clientX - window.innerWidth / 2) * moveFactor;
-          const offsetY = (e.clientY - window.innerHeight / 2) * moveFactor;
+        // Variables constantes déplacées en dehors des gestionnaires d'événements
+        const centerX = window.innerWidth / 2;
+        const centerY = window.innerHeight / 2;
+        const maxDistance = Math.sqrt(Math.pow(window.innerWidth / 2, 2) + Math.pow(window.innerHeight / 2, 2));
+        const exponent = 2;
+
+        let mouseX = centerX;
+        let mouseY = centerY;
+
+        const updateMousePosition = e => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+          requestAnimationFrame(handleMouseMove);
+        };
+
+        const handleMouseMove = () => {
+          const distanceToCenterX = Math.abs(mouseX - centerX);
+          const distanceToCenterY = Math.abs(mouseY - centerY);
+
+          const factorX = 1 + distanceToCenterX / centerX;
+          const factorY = 1 + distanceToCenterY / centerY;
+
+          const offsetX = ((mouseX - centerX) / factorX) * moveFactor;
+          const offsetY = ((mouseY - centerY) / factorY) * moveFactor;
           targetX = initialX + offsetX;
           targetY = initialY + offsetY;
-        });
+        };
 
+        document.addEventListener('mousemove', updateMousePosition);
         requestAnimationFrame(updatePosition);
       } else {
         setTimeout(() => {
@@ -108,6 +128,7 @@ export default {
         }, 200);
       }
     },
+
     initParallax() {
       const heroImage = document.querySelector('.heros img');
       if (heroImage) {

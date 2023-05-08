@@ -21,10 +21,8 @@
         atteignez vos objectifs,<br />
         réalisez-vous !!
       </h3>
-      <h4 data-aos="zoom-in" data-aos-duration="400" data-aos-anchor-placement="bottom-bottom">
-        <em>Rejoignez</em> <span>Avariko Atheltics</span>
-      </h4>
-      <button data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">EN SAVOIR PLUS</button>
+      <h4 data-aos="zoom-in" data-aos-duration="400" data-aos-anchor-placement="bottom-bottom"><em>Rejoignez</em> <span>Avariko Atheltics</span></h4>
+      <button data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom" @click="$router.push('/contact')">CONTACTEZ-NOUS</button>
     </div>
     <main class="home">
       <article id="philosophie">
@@ -36,14 +34,13 @@
         </div>
         <h2 data-aos="fade">Philosophie</h2>
         <p data-aos="fade">
-          Avariko Athletics est une <span>salle unique en son genre</span>, qui mélange
-          <span>disciplines, cultures, profils</span>, pour proposer un service adapté et <span>sur mesure</span> à tous
-          ses clients.
+          Avariko Athletics est une <span>salle unique en son genre</span>, qui mélange <span>disciplines, cultures, profils</span>, pour proposer un service
+          adapté et <span>sur mesure</span> à tous ses clients.
           <br />
           <br />
           <br />
-          Nous attachons autant d’importance à <span>la performance</span> dans la vie au quotidien
-          <span>« le mieux vivre »</span> qu’à la <span>performance sportive</span>
+          Nous attachons autant d’importance à <span>la performance</span> dans la vie au quotidien <span>« le mieux vivre »</span> qu’à la
+          <span>performance sportive</span>
         </p>
       </article>
       <article id="mission">
@@ -55,21 +52,19 @@
         </div>
         <h2 data-aos="fade">Notre Mission</h2>
         <p data-aos="fade">
-          Vous aider à devenir la meilleure version de vous-même, <span>physiquement et mentalement</span>, en vous
-          montrant comment <span>bouger votre corps correctement et sans blessures</span>.
+          Vous aider à devenir la meilleure version de vous-même, <span>physiquement et mentalement</span>, en vous montrant comment
+          <span>bouger votre corps correctement et sans blessures</span>.
           <br />
           <br />
           <br />
           Le programme que nous avons développé, accompagnés de
           <span>coachs reconnus à l’international et de professionnels de la santé</span>
-          (ostéopathe, kiné), est <span>unique</span>, <span>testé</span> et <span>approuvé</span>, et
-          <span>s’adapte à tous</span>.
+          (ostéopathe, kiné), est <span>unique</span>, <span>testé</span> et <span>approuvé</span>, et <span>s’adapte à tous</span>.
           <br />
           <br />
           <br />
-          Nous voulons que nos clients <span>s’épanouissent dans leurs vies personnelles</span>,
-          <span>en dehors</span> de notre salle de sport, en <span>atteignant leurs objectifs</span> sportifs mais aussi
-          <span>de vie</span>.
+          Nous voulons que nos clients <span>s’épanouissent dans leurs vies personnelles</span>, <span>en dehors</span> de notre salle de sport, en
+          <span>atteignant leurs objectifs</span> sportifs mais aussi <span>de vie</span>.
         </p>
       </article>
       <article id="qui">
@@ -81,8 +76,8 @@
         </div>
         <h2 data-aos="fade">Pour qui ?</h2>
         <p data-aos="fade">
-          Peu importe ton <span>âge</span>, ton <span>expérience sportive</span>, ta <span>condition physique</span>,
-          nous t’accompagnons pour devenir <span>la meilleure version de toi !</span>
+          Peu importe ton <span>âge</span>, ton <span>expérience sportive</span>, ta <span>condition physique</span>, nous t’accompagnons pour devenir
+          <span>la meilleure version de toi !</span>
           <br />
           <br />
           <br />

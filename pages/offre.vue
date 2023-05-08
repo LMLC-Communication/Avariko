@@ -15,23 +15,24 @@
         </div>
         <h2 data-aos="fade">L’ Assessment : l’évaluation corporelle</h2>
         <p data-aos="fade">
-          Parce que chaque client est unique, avec sa propre histoire et sa propre expérience, Coach Vince s’est
-          spécifiquement formé dans « l’assessment », l’évaluation corporelle
+          Parce que chaque client est unique, avec sa propre histoire et sa propre expérience, Coach Vince s’est spécifiquement formé dans « l’assessment »,
+          l’évaluation corporelle
         </p>
         <br />
         <p data-aos="fade">
-          Il s’agit d’un bilan au cours duquel il prend en considération la personne qu’il rencontre dans sa GLOBALITÉ
-          et tout ce qui peut influencer sur sa façon de bouger : son métier, son âge, sa condition physique, ses
-          blessures mais aussi sa personnalité et son état psychologique. Tous ces facteurs lui serviront à comprendre
-          comment fonctionne ton corps, quels muscles tu utilises “ trop” ou “pas assez” et de quelle façon tu
-          compenses.
+          Il s’agit d’un bilan au cours duquel il prend en considération la personne qu’il rencontre dans sa GLOBALITÉ et tout ce qui peut influencer sur sa
+          façon de bouger : son métier, son âge, sa condition physique, ses blessures mais aussi sa personnalité et son état psychologique. Tous ces facteurs
+          lui serviront à comprendre comment fonctionne ton corps, quels muscles tu utilises “ trop” ou “pas assez” et de quelle façon tu compenses.
         </p>
         <br />
         <p data-aos="fade">
-          La finalité étant de trouver la source d’un potentiel déséquilibre, d’une douleur persistante, et de te
-          montrer comment bouger pour corriger les problèmes que tu rencontres et te sentir mieux dans ta vie, au
-          quotidien.
+          La finalité étant de trouver la source d’un potentiel déséquilibre, d’une douleur persistante, et de te montrer comment bouger pour corriger les
+          problèmes que tu rencontres et te sentir mieux dans ta vie, au quotidien.
         </p>
+
+        <div class="quotation">
+          <button data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom" @click="$router.push('/contact')">CONTACTEZ-NOUS</button>
+        </div>
       </article>
       <article id="programme">
         <div class="gallery">
@@ -42,15 +43,12 @@
         </div>
 
         <h2 data-aos="fade">Le programme</h2>
-        <p data-aos="fade">
-          Chez Avariko Athletics les programmes d’entraînement sont <span>réfléchis, créés et testés</span> EN INTERNE
-          par les coachs.
-        </p>
+        <p data-aos="fade">Chez Avariko Athletics les programmes d’entraînement sont <span>réfléchis, créés et testés</span> EN INTERNE par les coachs.</p>
         <br />
         <p data-aos="fade">
-          A l’image d’un chef qui s’inspire de plusieurs techniques et cultures, Vince sélectionne le meilleur de
-          plusieurs disciplines (tels que le Cross training, StrongFit, l’Haltérophilie, la gymnastique) tout en
-          s’appuyant sur sa propre expérience de sportif, de père de famille et sa culture internationale.
+          A l’image d’un chef qui s’inspire de plusieurs techniques et cultures, Vince sélectionne le meilleur de plusieurs disciplines (tels que le Cross
+          training, StrongFit, l’Haltérophilie, la gymnastique) tout en s’appuyant sur sa propre expérience de sportif, de père de famille et sa culture
+          internationale.
         </p>
         <br />
         <p data-aos="fade">
@@ -66,8 +64,7 @@
             <div>
               <h4 data-aos="fade">#4 WOD + SPORT</h4>
               <p data-aos="fade">
-                Un vrai <span>test</span> de ton niveau de fitness qui va refléter ton travail au cours des niveaux
-                ci-dessous et révéler tes points faibles
+                Un vrai <span>test</span> de ton niveau de fitness qui va refléter ton travail au cours des niveaux ci-dessous et révéler tes points faibles
               </p>
             </div>
             <div>
@@ -84,11 +81,14 @@
             <div>
               <h4 data-aos="fade">#1 CLAM : la base</h4>
               <p data-aos="fade">
-                La fondation de notre gym, un programme constriut pour que tu appréhendes mieux ton corps et ton esprit.
-                On y utilise des sleds, des sacs de sebles et des haltères
+                La fondation de notre gym, un programme constriut pour que tu appréhendes mieux ton corps et ton esprit. On y utilise des sleds, des sacs de
+                sebles et des haltères
               </p>
             </div>
           </div>
+        </div>
+        <div class="quotation">
+          <button data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom" @click="$router.push('/contact')">CONTACTEZ-NOUS</button>
         </div>
       </article>
       <article id="temoignage">
@@ -100,9 +100,8 @@
         </div>
         <h2 data-aos="fade">Témoignage</h2>
         <p data-aos="fade">
-          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores vero nobis dicta omnis nisi
-          optio unde facere, cupiditate repellat voluptatibus, reprehenderit minus repudiandae, quos quaerat aliquid
-          illum illo voluptas?”
+          “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus asperiores vero nobis dicta omnis nisi optio unde facere, cupiditate repellat
+          voluptatibus, reprehenderit minus repudiandae, quos quaerat aliquid illum illo voluptas?”
         </p>
       </article>
       <article id="seminaire">
@@ -114,11 +113,9 @@
         </div>
         <h2 data-aos="fade">Séminaires et stage</h2>
         <p data-aos="fade">
-          Nous proposons régulièrement des séminaires et stages sur différentes thématiques à nos clients
-          (haltérophilie, stages vacances enfants etc).<br /><br /><br />
+          Nous proposons régulièrement des séminaires et stages sur différentes thématiques à nos clients (haltérophilie, stages vacances enfants etc).<br /><br /><br />
           Nous accompagnons également des clubs sportifs dans leurs préparation physique : rugby, judo etc…<br /><br /><br />
-          Enfin pour les professionnels sprotifs et coachs, nous pouvons vous accueillir si vous souhaitez organiser
-          votre séminaire ou formation chez nous !
+          Enfin pour les professionnels sprotifs et coachs, nous pouvons vous accueillir si vous souhaitez organiser votre séminaire ou formation chez nous !
         </p>
       </article>
     </main>

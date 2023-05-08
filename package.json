@@ -16,8 +16,6 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.13.6",
     "aos": "^2.3.4",
-    "axios": "^1.4.0",
-    "leaflet": "1.7.1",
-    "three": "^0.148.0"
+    "leaflet": "1.7.1"
   }
 }
