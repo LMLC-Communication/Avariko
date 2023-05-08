@@ -20,7 +20,7 @@
             <span>Joueurs de rugby</span>, il pratique dans sa jeunesse le Hockey sur Glace (of course) et la crosse
             (sport n°2 au Canada).
           </li>
-          <li><span>Titulaire d’un PBJEPPS AGFF</span>, CrossFit level 1 et 2,</li>
+          <li><span>Titulaire d’un PBJEPS AGFF</span>, CrossFit level 1 et 2,</li>
           <li>
             Près de <span>10 ans d’expérience</span> dans la coaching (tout âge et toute condition) il se forme
             régulièrement pour toujours approfondir ses connaissances. Un bon coach a lui-même un coach!
@@ -29,27 +29,29 @@
         <p data-aos="fade">Sa particularité : Il maitrise à la perfection le Franglais<br /></p>
       </article>
       <article>
-        <h3 data-aos="fade">Coach Aurélien</h3>
+        <h3 data-aos="fade">Coach Aurélien #Pikachu</h3>
         <img id="coachAurelien" src="@/assets/images/coach_aurelien.jpg" alt="" />
         <ul data-aos="fade">
           <li>
-            Arrivé tout droit du <span>Canada</span>, derrière la communauté AVARIKO Athletics, il y a Coach Vince !
+            Après avoir travaillé <span>6 ans dans le sport automobile</span>, Coach Aurélien à choisi de se reconvertir et de
+            rejoindre Avariko Athletics en tant que coach.
+          </li>
+          <li><span>Rigoureux</span>, <span>perfectionniste</span> et toujours de <span>bonne humeur</span> !</li>
+          <li>
+            Il a pratiqué de nombreux sports les principaux : Le basketball, l'athlétisme ainsi que le Trail running.
           </li>
           <li>
-            Un coach <span>solide</span>, à la <span>personnalité atypique</span> que tu vas aimer autant que détester
-            ;)
+            Titulaire d'un <span>BPJEPS Haltérophilie & Musculation</span>, de brevets d'État d'haltérophilie, de force athlétique et
+            functional training. Crossfit Gymnastique
           </li>
           <li>
-            <span>Joueurs de rugby</span>, il pratique dans sa jeunesse le Hockey sur Glace (of course) et la crosse
-            (sport n°2 au Canada).
-          </li>
-          <li><span>Titulaire d’un PBJEPPS AGFF</span>, CrossFit level 1 et 2,</li>
-          <li>
-            Près de <span>10 ans d’expérience</span> dans la coaching (tout âge et toute condition) il se forme
-            régulièrement pour toujours approfondir ses connaissances. Un bon coach a lui-même un coach!
+            Arrivé en 2021 à Avariko Athletics en tant que coach, il met tout en œuvre pour apprendre davantage et
+            devenir un meilleur coach !
           </li>
         </ul>
-        <p data-aos="fade">Sa particularité : Il maitrise à la perfection le Franglais<br /></p>
+        <p data-aos="fade">
+          Sa particularité : Un des premiers adhérents de la structure et un surnom.... Pikachu !<br />
+        </p>
       </article>
     </main>
   </div>

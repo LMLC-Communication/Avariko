@@ -3,7 +3,7 @@
     <div class="hero">
       <video src="@/assets/videos/intro.mp4" autoplay loop muted playsinline="true" />
       <div class="hero__content">
-        <h4 class="hero__content__subtitle">DÉPASSEZ VOS LIMITES</h4>
+        <h4 class="hero__content__subtitle">DO DIFFICULT THINGS WELL</h4>
         <h1 class="hero__content__title">
           <div><span>AVARIKO</span></div>
           <div><span>ATHLETICS</span></div>
@@ -17,7 +17,7 @@
       <!-- <ThreeScene />
       <ThreeSceneMirror class="mirror" /> -->
       <h3 data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
-        Transformez votre corps,<br />dépassez vos limites,<br />atteignez vos objectifs
+        Transformez votre corps,<br />Do Difficult Things Well,<br />atteignez vos objectifs
       </h3>
       <h4 data-aos="zoom-in" data-aos-duration="400" data-aos-anchor-placement="bottom-bottom">
         <em>Faites du</em> <span>Crossfit</span>

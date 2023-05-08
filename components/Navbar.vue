@@ -2,10 +2,10 @@
   <header>
     <nav>
       <!-- <nuxt-link to="/">
-        <img src="~/assets/images/logo_white.svg" alt="Nuxt Logo" />
+        <img src="~/assets/images/logo_$light-gray.svg" alt="Nuxt Logo" />
       </nuxt-link> -->
       <nuxt-link to="/" class="menu_title">
-        <img src="@/assets/images/logo_white.svg" alt="Nuxt Logo" class="logo" />
+        <img src="@/assets/images/logo.svg" alt="Nuxt Logo" class="logo" />
         <span>
           AVARIKO<br />
           ATHLETICS
@@ -93,9 +93,10 @@ export default {
 
 <style lang="scss" scoped>
 $navbar-height: 90px;
+$light-gray: #fff;
 .menu_title {
   font-size: 20px;
-  color: white;
+  color: black;
   text-decoration: none;
   display: flex;
   padding: 20px 0;
@@ -121,7 +122,7 @@ nav {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  background-color: black;
+  background-color: $light-gray;
   max-width: 100vw;
   a {
     animation: fade 2s;
@@ -142,7 +143,7 @@ nav {
     > li {
       margin-right: 30px;
       > a {
-        color: white;
+        color: black;
         text-decoration: none;
         font-size: 16px;
         &:hover {
@@ -160,7 +161,7 @@ nav {
         pointer-events: none;
         opacity: 0;
         list-style: none;
-        background-color: black;
+        background-color: $light-gray;
         transition: opacity 0.2s ease;
         display: flex;
         flex-direction: column;
@@ -174,11 +175,11 @@ nav {
           }
           > a {
             padding: 8px 20px;
-            color: white;
+            color: black;
             display: block;
             text-decoration: none;
             &:hover {
-              color: white;
+              color: black;
             }
           }
         }
@@ -205,7 +206,7 @@ nav {
   div {
     width: 30px;
     height: 3px;
-    background-color: white;
+    background-color: $light-gray;
     margin: 6px 0;
     transition: 0.4s;
   }
