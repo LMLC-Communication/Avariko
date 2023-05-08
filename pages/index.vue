@@ -17,10 +17,12 @@
       <!-- <ThreeScene />
       <ThreeSceneMirror class="mirror" /> -->
       <h3 data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
-        Transformez votre corps,<br />Do Difficult Things Well,<br />atteignez vos objectifs
+        Dépassez vos limites,<br />
+        atteignez vos objectifs,<br />
+        réalisez-vous !!
       </h3>
       <h4 data-aos="zoom-in" data-aos-duration="400" data-aos-anchor-placement="bottom-bottom">
-        <em>Faites du</em> <span>Crossfit</span>
+        <em>Rejoignez</em> <span>Avariko Atheltics</span>
       </h4>
       <button data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">EN SAVOIR PLUS</button>
     </div>
