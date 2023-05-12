@@ -28,7 +28,7 @@ export default {
       setTimeout(() => {
         mapInstance.value = L.map(mapContainer.value).setView([47.05470806356558, 2.386053402805502], 12);
 
-        L.tileLayer('http://stamen-tiles-c.a.ssl.fastly.net/toner/{z}/{x}/{y}@2x.png', {
+        L.tileLayer('https://stamen-tiles-c.a.ssl.fastly.net/toner/{z}/{x}/{y}@2x.png', {
           attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         }).addTo(mapInstance.value);
 

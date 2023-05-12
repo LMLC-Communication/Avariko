@@ -37,15 +37,13 @@ export default {
 </script>
 
 <style lang="scss">
-$blue: #0097a0;
-
 html {
   background-color: black;
 }
 
 body {
   margin: 0;
-  // background: url('/background.jpg') no-repeat center center fixed;
+  // background: url('/background.webp') no-repeat center center fixed;
   // background: rgb(54, 54, 54);
   // background: radial-gradient(
   //   circle,
@@ -101,7 +99,7 @@ body {
       text-decoration: none;
       transition: color 0.1s ease-in-out;
       &:hover {
-        color: $blue;
+        color: $primary;
       }
     }
   }
@@ -118,7 +116,7 @@ body {
     text-decoration: none;
     transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
     &:hover {
-      background-color: $blue;
+      background-color: $primary;
       color: #fff;
     }
   }

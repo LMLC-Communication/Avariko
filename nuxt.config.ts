@@ -1,13 +1,53 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title: 'Avariko',
+      title: 'Avariko Athletics',
+      htmlAttrs: {
+        lang: 'fr',
+      },
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
       meta: [
-        // <meta name="description" content="My amazing site">
         {
           name: 'description',
           content:
-            "Avariko est un lieu de sport incroyable qui vous offre une expérience de crossfit de haut niveau. Nous proposons une variété d'entraînements de crossfit pour tous les niveaux, des débutants aux athlètes expérimentés. Que vous soyez intéressé par une routine de remise en forme ou par une préparation physique pour des compétitions, notre équipe de coachs expérimentés vous guidera tout au long de votre parcours.",
+            "Avariko Athletics est une salle de sport unique proposant un entraînement adapté et sur mesure pour tous. Que vous soyez débutant, sportif de haut niveau, ou à la recherche d'une meilleure forme physique, rejoignez-nous pour devenir la meilleure version de vous-même. Contactez-nous dès aujourd'hui !",
+        },
+        {
+          name: 'msapplication-TileColor',
+          content: '#0097a0',
+        },
+        {
+          name: 'theme-color',
+          content: '#ffffff',
+        },
+      ],
+      link: [
+        {
+          rel: 'apple-touch-icon',
+          sizes: '180x180',
+          href: '/apple-touch-icon.png',
+        },
+        {
+          rel: 'apple-touch-icon',
+          type: 'image/png',
+          sizes: '32x32',
+          href: '/favicon-32x32.png',
+        },
+        {
+          rel: 'apple-touch-icon',
+          type: 'image/png',
+          sizes: '16x16',
+          href: '/favicon-16x16.png',
+        },
+        {
+          rel: 'manifest',
+          href: '/site.webmanifest',
+        },
+        {
+          rel: 'mask-icon',
+          href: '/safari-pinned-tab.svg',
+          color: '#000000',
         },
       ],
     },
@@ -35,5 +75,12 @@ export default defineNuxtConfig({
   ],
   build: {
     transpile: ['treejs'],
+  },
+  modules: ['nuxt-simple-sitemap'],
+  // /, /coachs, /contact, /horaires-et-tarifs, /mentions-legales, /offre
+  runtimeConfig: {
+    public: {
+      siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://avariko-athletics.com',
+    },
   },
 });

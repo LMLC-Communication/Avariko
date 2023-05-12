@@ -2,16 +2,16 @@
   <div>
     <!-- <h1>Notre Offre</h1> -->
     <div class="heros">
-      <img src="@/assets/images/CROSSFIT_AVARIKO-020.jpg" alt="" />
+      <img src="@/assets/images/CROSSFIT_AVARIKO-020.webp" alt="" />
       <h1>Notre offre</h1>
     </div>
     <main>
       <article id="assessment">
         <div class="gallery">
-          <img src="@/assets/images/CROSSFIT_AVARIKO-053.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-101.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-206.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-351.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-053.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-101.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-206.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-351.webp" alt="" data-aos="fade-up" />
         </div>
         <h2 data-aos="fade">L’ Assessment : l’évaluation corporelle</h2>
         <p data-aos="fade">
@@ -36,10 +36,10 @@
       </article>
       <article id="programme">
         <div class="gallery">
-          <img src="@/assets/images/CROSSFIT_AVARIKO-947.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-882.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-1069.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-003.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-947.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-882.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-1069.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-003.webp" alt="" data-aos="fade-up" />
         </div>
 
         <h2 data-aos="fade">Le programme</h2>
@@ -75,7 +75,7 @@
               </p>
             </div>
             <div>
-              <h4 data-aos="fade">#2 SWEAT : brûle moi ces f***ing calories !</h4>
+              <h4 data-aos="fade">#2 SWEAT : brûle moi ces f***ing calories&nbsp;!</h4>
               <p data-aos="fade">Travaille ton cardio avec 3 machines : row, ski et velo</p>
             </div>
             <div>
@@ -93,10 +93,10 @@
       </article>
       <article id="temoignage">
         <div class="gallery">
-          <img src="@/assets/images/CROSSFIT_AVARIKO-168.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-206.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-209.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-433.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-168.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-206.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-209.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-433.webp" alt="" data-aos="fade-up" />
         </div>
         <h2 data-aos="fade">Témoignage</h2>
         <p data-aos="fade">
@@ -106,16 +106,17 @@
       </article>
       <article id="seminaire">
         <div class="gallery">
-          <img src="@/assets/images/CROSSFIT_AVARIKO-453.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-599.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-785.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-867.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-453.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-599.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-785.webp" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-867.webp" alt="" data-aos="fade-up" />
         </div>
         <h2 data-aos="fade">Séminaires et stage</h2>
         <p data-aos="fade">
           Nous proposons régulièrement des séminaires et stages sur différentes thématiques à nos clients (haltérophilie, stages vacances enfants etc).<br /><br /><br />
           Nous accompagnons également des clubs sportifs dans leurs préparation physique : rugby, judo etc…<br /><br /><br />
-          Enfin pour les professionnels sprotifs et coachs, nous pouvons vous accueillir si vous souhaitez organiser votre séminaire ou formation chez nous !
+          Enfin pour les professionnels sprotifs et coachs, nous pouvons vous accueillir si vous souhaitez organiser votre séminaire ou formation chez
+          nous&nbsp;!
         </p>
       </article>
     </main>
@@ -123,6 +124,16 @@
 </template>
 
 <script>
+useHead({
+  title: 'Avariko Athletics - Notre offre',
+  meta: [
+    {
+      name: 'description',
+      content:
+        "Découvrez notre offre d'Avariko Athletics. Proposant une évaluation corporelle unique, nous offrons un programme d'entraînement interne créé et testé par nos coachs. Nous incluons également des séminaires et des stages variés pour nos clients. Contactez-nous pour en savoir plus.",
+    },
+  ],
+});
 export default {
   methods: {
     initParallax() {

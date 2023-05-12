@@ -5,7 +5,7 @@
         <img src="~/assets/images/logo_$white.svg" alt="Nuxt Logo" />
       </nuxt-link> -->
       <nuxt-link to="/" class="menu_title">
-        <img src="@/assets/images/logo.svg" alt="Nuxt Logo" class="logo" />
+        <img src="@/assets/images/logo_white.svg" alt="Nuxt Logo" class="logo" />
         <span>
           AVARIKO<br />
           ATHLETICS
@@ -106,6 +106,7 @@ $black: #000;
   img {
     height: 50px;
     width: 90px;
+    object-fit: contain;
   }
   span {
     display: block;

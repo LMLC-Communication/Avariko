@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="heros">
-      <img src="@/assets/images/CROSSFIT_AVARIKO-012.jpg" alt="" />
+      <img src="@/assets/images/CROSSFIT_AVARIKO-012.webp" alt="" />
       <h1>Horaires et tarifs</h1>
     </div>
     <main>
@@ -100,6 +100,16 @@
 </template>
 
 <script>
+useHead({
+  title: 'Avariko Athletics - Horaires et tarifs',
+  meta: [
+    {
+      name: 'description',
+      content:
+        "Découvrez les horaires et les tarifs d'Avariko Athletics. Nous offrons des cours pour adultes, enfants et adolescents, ainsi que du coaching personnel. Profitez de nos tarifs compétitifs et de nos séances à l'unité ou en abonnement.",
+    },
+  ],
+});
 export default {
   methods: {
     initParallax() {

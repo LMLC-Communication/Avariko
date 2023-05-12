@@ -45,7 +45,7 @@ h2 {
 }
 
 main.home {
-  background: url('/bg.png');
+  background: url('/bg.svg');
   background-size: cover;
   padding: 50px 0;
 }

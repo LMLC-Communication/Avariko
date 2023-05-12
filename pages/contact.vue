@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="heros">
-      <img src="@/assets/images/CROSSFIT_AVARIKO-146.jpg" alt="" />
+      <img src="@/assets/images/CROSSFIT_AVARIKO-146.webp" alt="" />
       <h1>Contactez nous</h1>
     </div>
     <main>
@@ -35,9 +35,9 @@
           <input type="submit" value="Envoyer" />
         </form>
         <form v-else>
-          <p>Merci pour votre message !</p>
+          <p>Merci pour votre message&nbsp;!</p>
           <p>Nous vous répondrons dans les plus brefs délais.</p>
-          <p>A très bientôt !</p>
+          <p>A très bientôt&nbsp;!</p>
           <!-- Envoyer un nouveau message -->
           <input type="submit" value="Envoyer un nouveau message" @click="sended = false" />
         </form>
@@ -49,6 +49,16 @@
 </template>
 
 <script>
+useHead({
+  title: 'Avariko Athletics - Contact',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Contactez Avariko Athletics pour toutes vos questions ou pour planifier votre prochaine session. Appelez-nous au 0699323213, suivez-nous sur Instagram ou utilisez notre formulaire de contact en ligne.',
+    },
+  ],
+});
 export default {
   data() {
     return {

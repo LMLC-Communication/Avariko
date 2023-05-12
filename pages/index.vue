@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="hero">
-      <video src="@/assets/videos/intro.mp4" autoplay loop muted playsinline="true" />
+      <video autoplay loop muted playsinline="true" loading="lazy" :src="isMobile ? '/intro_mobile.mp4' : '/intro.mp4'" />
       <div class="hero__content">
         <h4 class="hero__content__subtitle">DO DIFFICULT THINGS WELL</h4>
         <h1 class="hero__content__title">
@@ -10,7 +10,7 @@
 
           <!-- <img src="~/assets/images/logo_white.svg" alt="Nuxt Logo" class="logo" /> -->
         </h1>
-        <button @click="scrollTo('philosophie')">EN SAVOIR PLUS</button>
+        <button @click="$router.push('/contact')">CONTACTEZ-NOUS</button>
       </div>
     </div>
     <div class="quotation">
@@ -19,7 +19,7 @@
       <h3 data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom">
         Dépassez vos limites,<br />
         atteignez vos objectifs,<br />
-        réalisez-vous !!
+        réalisez-vous&nbsp;!!
       </h3>
       <h4 data-aos="zoom-in" data-aos-duration="400" data-aos-anchor-placement="bottom-bottom"><em>Rejoignez</em> <span>Avariko Atheltics</span></h4>
       <button data-aos="fade" data-aos-duration="500" data-aos-anchor-placement="bottom-bottom" @click="$router.push('/contact')">CONTACTEZ-NOUS</button>
@@ -27,10 +27,10 @@
     <main class="home">
       <article id="philosophie">
         <div class="gallery">
-          <img src="@/assets/images/CROSSFIT_AVARIKO-101.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-105.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-378.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-139.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-101.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-105.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-378.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-139.webp" alt="" data-aos="fade-up" loading="lazy" />
         </div>
         <h2 data-aos="fade">Philosophie</h2>
         <p data-aos="fade">
@@ -45,10 +45,10 @@
       </article>
       <article id="mission">
         <div class="gallery">
-          <img src="@/assets/images/CROSSFIT_AVARIKO-458.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-593.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-862.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-903.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-458.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-593.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-862.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-903.webp" alt="" data-aos="fade-up" loading="lazy" />
         </div>
         <h2 data-aos="fade">Notre Mission</h2>
         <p data-aos="fade">
@@ -69,28 +69,28 @@
       </article>
       <article id="qui">
         <div class="gallery">
-          <img src="@/assets/images/CROSSFIT_AVARIKO-039.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-129.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-351.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-1202.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-039.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-129.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-351.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-1202.webp" alt="" data-aos="fade-up" loading="lazy" />
         </div>
         <h2 data-aos="fade">Pour qui ?</h2>
         <p data-aos="fade">
           Peu importe ton <span>âge</span>, ton <span>expérience sportive</span>, ta <span>condition physique</span>, nous t’accompagnons pour devenir
-          <span>la meilleure version de toi !</span>
+          <span>la meilleure version de toi&nbsp;!</span>
           <br />
           <br />
           <br />
           Débutants, blessés, sportifs de haut niveau, enfants, grand-parents, hommes et femmes,
-          <span>notre programme s’adapte à tous !</span>
+          <span>notre programme s’adapte à tous&nbsp;!</span>
         </p>
       </article>
       <article id="salle">
         <div class="gallery">
-          <img src="@/assets/images/CROSSFIT_AVARIKO-235.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-059.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-378.jpg" alt="" data-aos="fade-up" />
-          <img src="@/assets/images/CROSSFIT_AVARIKO-020.jpg" alt="" data-aos="fade-up" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-235.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-059.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-378.webp" alt="" data-aos="fade-up" loading="lazy" />
+          <img src="@/assets/images/CROSSFIT_AVARIKO-020.webp" alt="" data-aos="fade-up" loading="lazy" />
         </div>
         <h2 data-aos="fade">La salle</h2>
         <p data-aos="fade">
@@ -130,12 +130,34 @@
 </template>
 
 <script>
+useHead({
+  title: 'Avariko Athletics - Horaires et tarifs',
+  meta: [
+    {
+      name: 'description',
+      content:
+        "Avariko Athletics est une salle de sport unique proposant un entraînement adapté et sur mesure pour tous. Que vous soyez débutant, sportif de haut niveau, ou à la recherche d'une meilleure forme physique, rejoignez-nous pour devenir la meilleure version de vous-même. Contactez-nous dès aujourd'hui !",
+    },
+  ],
+});
 export default {
+  data() {
+    return {
+      isMobile: false,
+    };
+  },
   methods: {
     scrollTo(id) {
       const element = document.getElementById(id);
       element.scrollIntoView();
     },
+  },
+  mounted() {
+    this.isMobile = window.innerWidth < 768;
+    // on resize check if mobile
+    window.addEventListener('resize', () => {
+      this.isMobile = window.innerWidth < 768;
+    });
   },
 };
 </script>

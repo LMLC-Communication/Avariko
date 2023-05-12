@@ -1,63 +1,58 @@
 <template>
   <div>
     <div class="heros">
-      <img src="@/assets/images/CROSSFIT_AVARIKO-421_bis.jpg" alt="" />
+      <img src="@/assets/images/CROSSFIT_AVARIKO-421_bis.webp" alt="" />
       <h1>Les coachs</h1>
     </div>
     <main>
       <article>
         <h3 data-aos="fade">Coach Vince #ohfuck</h3>
-        <img id="coachImage" src="@/assets/images/CROSSFIT_AVARIKO-666.jpg" alt="" />
+        <img id="coachImage" src="@/assets/images/CROSSFIT_AVARIKO-666.webp" alt="" />
         <ul data-aos="fade">
-          <li>
-            Arrivé tout droit du <span>Canada</span>, derrière la communauté AVARIKO Athletics, il y a Coach Vince !
-          </li>
-          <li>
-            Un coach <span>solide</span>, à la <span>personnalité atypique</span> que tu vas aimer autant que détester
-            ;)
-          </li>
-          <li>
-            <span>Joueurs de rugby</span>, il pratique dans sa jeunesse le Hockey sur Glace (of course) et la crosse
-            (sport n°2 au Canada).
-          </li>
+          <li>Arrivé tout droit du <span>Canada</span>, derrière la communauté AVARIKO Athletics, il y a Coach Vince&nbsp;!</li>
+          <li>Un coach <span>solide</span>, à la <span>personnalité atypique</span> que tu vas aimer autant que détester ;)</li>
+          <li><span>Joueur de rugby</span>, il pratique dans sa jeunesse le Hockey sur Glace (of course) et la crosse (sport n°2 au Canada).</li>
           <li><span>Titulaire d’un PBJEPS AGFF</span>, CrossFit level 1 et 2,</li>
           <li>
-            Près de <span>10 ans d’expérience</span> dans la coaching (tout âge et toute condition) il se forme
-            régulièrement pour toujours approfondir ses connaissances. Un bon coach a lui-même un coach!
+            Près de <span>10 ans d’expérience</span> dans la coaching (tout âge et toute condition) il se forme régulièrement pour toujours approfondir ses
+            connaissances. Un bon coach a lui-même un coach&nbsp;!
           </li>
         </ul>
         <p data-aos="fade">Sa particularité : Il maitrise à la perfection le Franglais<br /></p>
       </article>
       <article>
         <h3 data-aos="fade">Coach Aurélien #Pikachu</h3>
-        <img id="coachAurelien" src="@/assets/images/coach_aurelien.jpg" alt="" />
+        <img id="coachAurelien" src="@/assets/images/coach_aurelien.webp" alt="" />
         <ul data-aos="fade">
           <li>
-            Après avoir travaillé <span>6 ans dans le sport automobile</span>, Coach Aurélien à choisi de se reconvertir
-            et de rejoindre Avariko Athletics en tant que coach.
+            Après avoir travaillé <span>6 ans dans le sport automobile</span>, Coach Aurélien à choisi de se reconvertir et de rejoindre Avariko Athletics en
+            tant que coach.
           </li>
-          <li><span>Rigoureux</span>, <span>perfectionniste</span> et toujours de <span>bonne humeur</span> !</li>
+          <li><span>Rigoureux</span>, <span>perfectionniste</span> et toujours de <span>bonne humeur</span>&nbsp;!</li>
+          <li>Il a pratiqué de nombreux sports les principaux : Le basketball, l'athlétisme ainsi que le Trail running.</li>
           <li>
-            Il a pratiqué de nombreux sports les principaux : Le basketball, l'athlétisme ainsi que le Trail running.
+            Titulaire d'un <span>BPJEPS Haltérophilie & Musculation</span>, de brevets d'État d'haltérophilie, de force athlétique et functional training.
+            Crossfit Gymnastique
           </li>
-          <li>
-            Titulaire d'un <span>BPJEPS Haltérophilie & Musculation</span>, de brevets d'État d'haltérophilie, de force
-            athlétique et functional training. Crossfit Gymnastique
-          </li>
-          <li>
-            Arrivé en 2021 à Avariko Athletics en tant que coach, il met tout en œuvre pour apprendre davantage et
-            devenir un meilleur coach !
-          </li>
+          <li>Arrivé en 2021 à Avariko Athletics en tant que coach, il met tout en œuvre pour apprendre davantage et devenir un meilleur coach&nbsp;!</li>
         </ul>
-        <p data-aos="fade">
-          Sa particularité : Un des premiers adhérents de la structure et un surnom.... Pikachu !<br />
-        </p>
+        <p data-aos="fade">Sa particularité : Un des premiers adhérents de la structure et un surnom.... Pikachu&nbsp;!<br /></p>
       </article>
     </main>
   </div>
 </template>
 
 <script>
+useHead({
+  title: 'Avariko Athletics - Les coachs',
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Rencontrez nos coachs à Avariko Athletics, Coach Vince et Coach Aurélien. Avec leurs expériences variées et leurs approches uniques, ils sont prêts à vous aider à atteindre vos objectifs de fitness. Découvrez leur parcours et leur expertise.',
+    },
+  ],
+});
 export default {
   methods: {
     initAnimation(selector) {
