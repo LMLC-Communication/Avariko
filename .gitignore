@@ -97,5 +97,8 @@ sw.*
 # API
 api
 
+# deployment
+*.sh
+
 # server 
 .htaccess
